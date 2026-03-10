@@ -1,0 +1,29 @@
+# BRAINROT SYSTEM CONFIGURATION v1.0.0
+# STATUS: CRITICAL | PROTOCOL: SIGMA
+
+core_parameters:
+  absolute_velocity: enabled
+  neural_load_limit: 99
+  dopamine_loop: recursive
+  ohio_containment: active
+
+metrics_thresholds:
+  rizz_index:
+    min: 800
+    max: 9001
+    current: 4200
+  fanum_tax_rate: 0.05
+  skibidi_latency: 0.2ms
+
+subsystems:
+  - id: surge_protector
+    active: true
+    logic: "prevent_cringe"
+  - id: alpha_triage
+    active: true
+    logic: "maximize_outcomes"
+
+metadata:
+  last_sync: "2026-03-10:00:35:52"
+  operator: "root"
+  session_id: "SIGMA-1773128152"
