@@ -1,31 +1,33 @@
-name: Sigma Pulse Generator
+name: IMPERIAL PULSE
+
 on:
   push:
-    branches: [ hardening/atomic-refactor-67 ]
+    branches: [ feature/pulse-meter, hardening/atomic-refactor-67 ]
   schedule:
-    - cron: '0 * * * *' # Runs every hour automatically
+    - cron: '0 * * * *'
 
 jobs:
-  update-telemetry:
+  autonomous-mutation:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      issues: write
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/checkout@v4
         with:
-          python-version: '3.10'
+          fetch-depth: 0
 
-      - name: Run Core Processor
-        run: python3 processor.py
-
-      - name: Commit and Push Changes
+      - name: Run Mutation Engine
         run: |
           git config --global user.name "Imperial-Bot"
           git config --global user.email "bot@brainrot.internal"
-          git add deadpan-brainrot.json
-          git commit -m "auto: pulse telemetry update [Sigma Level: Enforced]" || echo "No changes to commit"
-          git push
+          chmod +x auto_edit.sh
+          ./auto_edit.sh
+
+      - name: Post to System Log
+        if: success()
+        run: |
+          gh issue comment 157 --body ">> [AUTONOMOUS SYNC SUCCESS] Repository mutated. Timestamp: \$(date +%T) | Protocol: SIGMA-ENFORCED"
+        env:
+          GH_TOKEN: \${{ secrets.GITHUB_TOKEN }}
