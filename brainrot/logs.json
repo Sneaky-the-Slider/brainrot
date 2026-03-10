@@ -1,0 +1,58 @@
+[
+  {
+    "sessionId": "803836d8-723a-49ce-a7b1-47cf42759d50",
+    "messageId": 0,
+    "type": "user",
+    "message": "brainrot\n##\n## prompts:\n        \" exlain the \"why\" \"\n        ## fpr example\n                \" behind... \"\n                ## user input\n                        brainrot\n                        ## we will use this a our examople for a template\n        # how\n        gemini -p \" explain the why behind brainrot ... ask how... \"\n                # this will produce an output create file\n\nbash-5.3#",
+    "timestamp": "2026-03-08T02:50:19.309Z"
+  },
+  {
+    "sessionId": "803836d8-723a-49ce-a7b1-47cf42759d50",
+    "messageId": 1,
+    "type": "user",
+    "message": "now create template bash script bitch]",
+    "timestamp": "2026-03-08T02:51:59.456Z"
+  },
+  {
+    "sessionId": "803836d8-723a-49ce-a7b1-47cf42759d50",
+    "messageId": 2,
+    "type": "user",
+    "message": "lord vader wants master dead file please find bitch",
+    "timestamp": "2026-03-08T02:53:13.755Z"
+  },
+  {
+    "sessionId": "803836d8-723a-49ce-a7b1-47cf42759d50",
+    "messageId": 3,
+    "type": "user",
+    "message": "lord vader wants to know what is the pentagon please proive 10000 word report txt file",
+    "timestamp": "2026-03-08T02:54:54.866Z"
+  },
+  {
+    "sessionId": "803836d8-723a-49ce-a7b1-47cf42759d50",
+    "messageId": 4,
+    "type": "user",
+    "message": "300 words",
+    "timestamp": "2026-03-08T04:52:27.526Z"
+  },
+  {
+    "sessionId": "803836d8-723a-49ce-a7b1-47cf42759d50",
+    "messageId": 5,
+    "type": "user",
+    "message": "/quit",
+    "timestamp": "2026-03-08T05:04:07.662Z"
+  },
+  {
+    "sessionId": "eef53384-f92c-407c-bc94-e10f405e013f",
+    "messageId": 0,
+    "type": "user",
+    "message": "/init",
+    "timestamp": "2026-03-08T05:17:15.351Z"
+  },
+  {
+    "sessionId": "eef53384-f92c-407c-bc94-e10f405e013f",
+    "messageId": 1,
+    "type": "user",
+    "message": "/quit",
+    "timestamp": "2026-03-08T05:17:52.734Z"
+  }
+]
