@@ -29,3 +29,7 @@ status:
 	 @echo "---------------------------------------------------"
 	 @tail -n 5 GEMINI_BRAINROT.md
 	 @echo "---------------------------------------------------"
+
+speak:
+	@echo ">> Activating Lore Aggregator (TTS)..."
+	@./speak.sh
