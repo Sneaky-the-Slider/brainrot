@@ -1,0 +1,33 @@
+name: IMPERIAL PULSE
+
+on:
+  push:
+    branches: [ feature/pulse-meter, hardening/atomic-refactor-67 ]
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  autonomous-mutation:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Mutation Engine
+        run: |
+          git config --global user.name "Imperial-Bot"
+          git config --global user.email "bot@brainrot.internal"
+          chmod +x auto_edit.sh
+          ./auto_edit.sh
+
+      - name: Post to System Log
+        if: success()
+        run: |
+          gh issue comment 157 --body ">> [AUTONOMOUS SYNC SUCCESS] Repository mutated. Timestamp: \$(date +%T) | Protocol: SIGMA-ENFORCED"
+        env:
+          GH_TOKEN: \${{ secrets.GITHUB_TOKEN }}

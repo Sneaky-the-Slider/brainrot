@@ -1,0 +1,12 @@
+{
+  "scenarios": [
+    {"id": "V01", "name": "Atomic Buffer Saturation", "priority": "CRITICAL"},
+    {"id": "V02", "name": "Neural Load Balancing", "priority": "HIGH"},
+    {"id": "V03", "name": "Sigma Branch Convergence", "priority": "STABLE"},
+    {"id": "V04", "name": "Recursive Repository Terraforming", "priority": "MAXIMUM"}
+  ],
+  "metrics": {
+    "api_throughput": "163_PR_PER_SEC",
+    "rizz_index": 9001
+  }
+}
