@@ -35,13 +35,15 @@ The workspace is heavily focused on:
 - **Spreadsheets:** Tracking for various projects, including `TurboTheTurtle.xlsx` and `Cheat sheets .xlsx`.
 - **Templates:** Word templates for character letters and indexing.
 
-### 4. **System & Web (`html/`, `yml/`, `files/`)**
-- **Web Assets:** Basic HTML files in `html/`.
-- **Rclone Help:** Documentation for cloud sync tools in `files/rclone-help`.
+### 5. **Absolute Velocity & Automation Research (`absolute_velocity.json`, `master_surge.sh`)**
+- **`absolute_velocity.json`**: A collection of 10 "Absolute Velocity" deployment scenarios for high-volume repository automation and stress-testing.
+- **`master_surge.sh`**: Script for executing parallelized repository interactions.
+- **`publish_issues.sh`**: Utility for bulk-publishing issues to GitHub.
 
 ---
 
 ## Key Files
+- **`absolute_velocity.json`**: 10 engineered prompts for "Absolute Velocity" deployment.
 - **`txt/main.cpp.txt`**: Core logic for the Arduino Safe Dialer.
 - **`yml/api.yml`**: Canva Connect API specification (v2024-06-18).
 - **`Files/Google AI Studio/Reddit/README.md`**: Information on Reddit Vault backup integrity.
