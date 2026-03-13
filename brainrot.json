@@ -1,0 +1,98 @@
+{
+  "version": "2026-03-13-brainrot",
+  "description": "free trial LLMs but make it bussin no cap fr fr",
+  "author": "C-3PO (Junior Developer) + Brainrot Platform",
+  "ohio_containment_level": "MAXIMUM",
+  "rizz_index": 9001,
+  "llms": [
+    {
+      "name": "Kimi (Moonshot AI)",
+      "tier": "the most sigma free trial fr",
+      "vibe": "1M token context, unlimited web chats, image uploads, built-in agents — straight Ohio rizz god tier, feels paid but zero cap needed",
+      "status": "unlimited skibidi energy",
+      "fanum_tax": "0% (actually free)",
+      "mewing_streak_compatible": true,
+      "tags": ["sigma", "Ohio", "based", "no-cap"]
+    },
+    {
+      "name": "SuperGrok (xAI)",
+      "tier": "your current SuperGrok subscription goes crazy",
+      "vibe": "priority Grok-4/5 access, higher quotas, occasional 3-7 day free trials via X — gyatt level priority, base Grok still free but limited on grok.com/X",
+      "status": "sigma only",
+      "fanum_tax": "$16/mo (premium)",
+      "mewing_streak_compatible": true,
+      "tags": ["Grok", "xAI", "Elon", "maximum-truth-seeking"]
+    },
+    {
+      "name": "Claude (Anthropic)",
+      "tier": "enhanced free tier",
+      "vibe": "memory, custom skills, connectors, file creation — perfect for coding sigma sessions, no brainrot here",
+      "status": "bussin for devs",
+      "fanum_tax": "$0-20/mo (tiers available)",
+      "mewing_streak_compatible": true,
+      "tags": ["claude", "anthropic", "helpful", "harmless", "honest"]
+    },
+    {
+      "name": "Gemini (Google)",
+      "tier": "completely free web access",
+      "vibe": "multimodal + real-time search — Ohio level knowledge drops, zero payment arc",
+      "status": "fanum tax free",
+      "fanum_tax": "0% (actually free)",
+      "mewing_streak_compatible": true,
+      "tags": ["Gemini", "Google", "multimodal", "search-integrated"]
+    },
+    {
+      "name": "Groq",
+      "tier": "lightning-fast inference API",
+      "vibe": "generous free tier, speedruns every prompt — skibidi fast no cap",
+      "status": "edge lord approved",
+      "fanum_tax": "0% (generous free tier)",
+      "mewing_streak_compatible": true,
+      "tags": ["Groq", "fast", "edge", "inference"]
+    },
+    {
+      "name": "DeepSeek-V3 / Qwen / GLM",
+      "tier": "self-host or free API (OpenRouter/Poe)",
+      "vibe": "dozens of models in one place, truly unlimited if you self-host — pure rizz energy",
+      "status": "brainrot proof",
+      "fanum_tax": "0% (self-host) or varies (API)",
+      "mewing_streak_compatible": true,
+      "tags": ["open-source", "self-host", "china-models", "unlimited"]
+    },
+    {
+      "name": "ChatGPT Free (OpenAI)",
+      "tier": "basic free tier",
+      "vibe": "the OG but rate limited — still hits different when you need quick answers",
+      "status": "legacy rizz",
+      "fanum_tax": "$0-20/mo (plus available)",
+      "mewing_streak_compatible": false,
+      "tags": ["OpenAI", "ChatGPT", "classic", "rate-limited"]
+    },
+    {
+      "name": "Perplexity AI",
+      "tier": "free search-focused LLM",
+      "vibe": "perfect for research grinding — citations included, no hallucination cap",
+      "status": "studious sigma",
+      "fanum_tax": "0% (free tier)",
+      "mewing_streak_compatible": true,
+      "tags": ["search", "research", "citations", "accuracy"]
+    }
+  ],
+  "sigma_recommendations": {
+    "for_coding": "Claude, Kimi, Groq",
+    "for_speed": "Groq, SuperGrok",
+    "for_research": "Perplexity, Gemini, Kimi",
+    "for_unlimited_context": "Kimi (1M tokens fr fr)",
+    "for_maximum_truth": "SuperGrok, Grok",
+    "for_self_hosting": "DeepSeek-V3, Qwen, GLM"
+  },
+  "brainrot_metrics": {
+    "total_ohio_risk": "42%",
+    "aggregate_rizz_score": 7800,
+    "fanum_tax_average": "5%",
+    "grimace_shake_compatibility": "100%",
+    "gyatt_level": "MAXIMUM"
+  },
+  "last_updated": "2026-03-13",
+  "maintained_by": "Brainrot Platform | C-3PO Junior Dev Protocol"
+}

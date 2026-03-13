@@ -1,0 +1,99 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Dependencies
+*.lock
+package-lock.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local development
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Logs
+logs/
+*.log
+
+# Audio files (if recording ASMR)
+*.wav
+*.mp3
+*.m4a
+*.aac
+
+# Videos
+*.mp4
+*.mov
+*.avi
+
+# Images (if creating mockups)
+screenshots/
+*.psd
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.rar
+
+# IDE workspace files
+.vscode/workspace.json
+.idea/workspace.xml
+
+# Testing
+coverage/
+.nyc_output/
+
+# Keep common config files
+!.gitignore
+!.editorconfig
+!.prettierrc
+!.eslintrc
+
+# Keep documentation
+!README.md
+!CHANGELOG.md
+!SECURITY.md
+!CODE_OF_CONDUCT.md

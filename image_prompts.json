@@ -1,0 +1,46 @@
+{
+  "title": "Image Prompts",
+  "rating": "mature",
+  "prompts": [
+    {
+      "id": 1,
+      "prompt": "stunning ultra-detailed photorealistic 22-year-old Thai beach goddess, radiant sun-kissed golden-bronze skin with natural freckles and oil sheen, exotic upturned almond eyes with thick kohl liner and golden highlight, long curled lashes, juicy plump lips in nude gloss, long voluminous wavy chestnut hair windswept by ocean breeze, athletic yet curvaceous body with firm round breasts, tiny waist, flared hips and toned legs, wearing metallic gold micro-bikini triangles barely covering nipples and labia outline visible through thin fabric, strings tied loosely, body dripping with coconut oil and seawater droplets cascading down cleavage sternum abs inner thighs, reclining sensually on pristine white sand at Phuket beach during fiery orange-pink sunset, dramatic backlighting creating golden rim and lens flare, sultry over-shoulder glance with parted lips and come-hither eyes, realistic wet skin reflections, sand clinging to oiled curves, tropical paradise erotic vibe, 8k HDR, professional fashion photography, sharp focus, intricate details",
+      "negative_prompt": "ugly, disfigured, extra limbs, bad proportions, blurry, low quality, cartoon, anime, text, logo, pale skin, clothing tears unrelated to prompt, male features",
+      "steps": 55,
+      "cfg_scale": 7,
+      "sampler": "DPM++ 2M SDE Karras",
+      "width": 640,
+      "height": 960
+    },
+    {
+      "id": 2,
+      "prompt": "intimate photorealistic masterpiece, gorgeous 20-year-old Vietnamese seductress with girl-next-door charm turned vixen, smooth fair-to-light skin with natural rosy blush on cheeks and chest, large innocent doe eyes with subtle sparkle and naughty glint, long dark lashes, small perfect nose, cherry-red lips in teasing half-smile with finger between teeth, silky jet-black hair in high messy ponytail with loose strands framing face, petite yet voluptuous figure petite frame big natural C-cup breasts perky nipples visible through fabric, wearing ultra-short white cropped tank top riding up to show full underboob and toned midriff, Daisy Duke denim micro-shorts unbuttoned low on hips exposing lace thong straps, lounging sprawled on modern white bed in stylish Hanoi loft apartment, city night lights twinkling through large windows in background, playful yet intensely seductive expression looking directly at viewer, soft warm golden indoor lighting from bedside lamp and cool city glow, realistic fabric creases stretch thin cotton transparency, detailed skin pores subtle sweat sheen, erotic cozy intimate bedroom mood, 8k ultra-sharp, photorealistic, depth of field",
+      "negative_prompt": "blurry, deformed anatomy, extra limbs, bad hands, ugly face, cartoon, 3d render, text, watermark, elderly, child, overweight, harsh shadows",
+      "steps": 48,
+      "cfg_scale": 7.5,
+      "sampler": "DPM++ 2M Karras",
+      "width": 512,
+      "height": 768
+    },
+    {
+      "id": 3,
+      "prompt": "masterpiece, best quality, ultra-photorealistic 8k portrait of a stunning 24-year-old Chinese seductress, flawless ivory skin with subtle pearl sheen and visible micro-pores, sharp almond eyes with dramatic red smoky shadow and thick winged liner, long curled lashes, high cheekbones, full crimson lips in glossy finish slightly parted, long straight obsidian hair with side-swept bangs cascading to waist, statuesque hourglass figure 34E-23-37, wearing a high-slit red silk cheongsam with gold dragon embroidery, fabric clinging to curves, deep side slit exposing entire toned leg and hip bone up to waist, no bra visible erect nipples pressing through thin silk, standing in luxurious Shanghai hotel suite with city lights twinkling, seductive over-shoulder glance with intense bedroom eyes, one hand trailing down thigh, soft volumetric rim lighting and warm candle glow highlighting collarbones cleavage and inner thighs, realistic silk texture sheen wrinkles, erotic elegant atmosphere, sharp focus, intricate skin details, depth of field",
+      "negative_prompt": "blurry, deformed, extra limbs, bad anatomy, poorly drawn face, watermark, text, cartoon, anime, child, elderly, fat, masculine",
+      "steps": 50,
+      "cfg_scale": 7.5,
+      "sampler": "DPM++ 3M SDE Karras",
+      "width": 576,
+      "height": 896
+    },
+    {
+      "id": 4,
+      "prompt": "steamy intimate photorealistic 8k, gorgeous 20-year-old Vietnamese onsen temptress, silky light tan skin flushed from heat steam rising, large doe eyes with wet lashes, plump lips parted in sigh, long wet black hair clinging to back and shoulders, petite voluptuous figure natural C-cup breasts perky in steam, completely nude with strategic steam and hair covering, lounging in private outdoor hot spring at night lantern light and stars, misty water surface reflections, sultry relaxed expression eyes half-closed looking at viewer, warm golden lantern glow and cool moonlight sculpting wet curves, realistic skin steam condensation droplets pores, erotic relaxing sensual spa vibe, sharp focus masterpiece",
+      "negative_prompt": "blurry, deformed, extra fingers, ugly face, cartoon, anime, text, harsh lighting",
+      "steps": 48,
+      "cfg_scale": 7.5,
+      "sampler": "DPM++ 2M Karras",
+      "width": 512,
+      "height": 768
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "ASMR Brainrot Engine",
+  "subtitle": "Whispered Nonsense for the Algorithmically Overstimulated",
+  "philosophy": "Quality-focused content that soothes and confuses in equal measure. Not demographic specific—just vibes.",
+  "asmr_engine": {
+    "trigger_type": "Whispered_Nonsense",
+    "decibel_level": "Whisper_Quiet",
+    "brainrot_coefficient": 0.98,
+    "baseline_frequency": "432 Hz (Universe Alignment)",
+    "reverb_depth": "Cathedral-level echo"
+  },
+  "listening_guidelines": [
+    "Best experienced at 3 AM with noise-canceling headphones",
+    "Adjust brainrot coefficient to desired confusion level",
+    "Close your eyes and let the algorithm take over",
+    "Side effects may include: profound calm, spiritual questioning, sudden urge to touch grass"
+  ],
+  "creator_notes": "We started this as a joke. Then we realized people actually fall asleep to this. Now it's art.",
+  "disclaimer": "Entertainment only. Not responsible for existential awakenings or sudden clarity about your life choices."
+}

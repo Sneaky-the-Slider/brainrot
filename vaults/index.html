@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BRAINROT VAULTS • 2026 MEGA HUB</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body { background: linear-gradient(135deg, #0a0a0a 0%, #1a0033 50%, #330a1a 100%); }
+.vault-card {
+  transition: all 0.3s cubic-bezier(0.23,1,0.32,1);
+  cursor: pointer;
+}
+.vault-card:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 0 50px currentColor;
+}
+.neon-title {
+  text-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff, 0 0 90px #ffff00;
+  animation: pulse 3s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { text-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff; }
+  50% { text-shadow: 0 0 50px #ff00ff, 0 0 100px #00ffff, 0 0 150px #ffff00; }
+}
+.stats-counter {
+  animation: countUp 2s ease-out;
+}
+@keyframes countUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+</style>
+</head>
+<body class="min-h-screen text-white font-mono p-8">
+
+<div class="max-w-7xl mx-auto">
+  <!-- Hero Header -->
+  <header class="text-center mb-16">
+    <h1 class="text-8xl font-black neon-title mb-6 tracking-tighter">
+      BRAINROT<br>VAULTS
+    </h1>
+    <p class="text-2xl text-purple-400 mb-4">Infinite AI Prompt Generators • Single-File Architecture • Zero Dependencies</p>
+    <div class="flex justify-center gap-8 text-center stats-counter">
+      <div>
+        <div class="text-5xl font-black text-cyan-400">∞</div>
+        <div class="text-xs opacity-70">VIRAL PROMPTS</div>
+      </div>
+      <div>
+        <div class="text-5xl font-black text-orange-400">5</div>
+        <div class="text-xs opacity-70">ACTIVE VAULTS</div>
+      </div>
+      <div>
+        <div class="text-5xl font-black text-pink-400">0</div>
+        <div class="text-xs opacity-70">DEPENDENCIES</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Vault Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
+    <!-- Sigma Vault -->
+    <div class="vault-card bg-gradient-to-br from-cyan-900/50 to-emerald-900/50 border-2 border-cyan-500 rounded-3xl p-8 text-cyan-400"
+         onclick="window.location.href='sigma_vault.html'">
+      <div class="text-7xl mb-4">🧿</div>
+      <h2 class="text-4xl font-black mb-3">SIGMA VAULT</h2>
+      <p class="text-lg mb-4 opacity-90">
+        Viral TikTok sigma prompts. Aura-maxxing, mogging challenges, Italian brainrot energy.
+        Safe poses only. Pure rizz generation.
+      </p>
+      <div class="flex gap-3 text-xs font-bold">
+        <span class="px-3 py-1 bg-cyan-600/30 rounded-full">AURA</span>
+        <span class="px-3 py-1 bg-cyan-600/30 rounded-full">RIZZ</span>
+        <span class="px-3 py-1 bg-cyan-600/30 rounded-full">SIGMA</span>
+      </div>
+      <div class="mt-6 text-right text-3xl font-black">ENTER →</div>
+    </div>
+
+    <!-- Dog Vault -->
+    <div class="vault-card bg-gradient-to-br from-orange-900/50 to-yellow-900/50 border-2 border-orange-500 rounded-3xl p-8 text-orange-400"
+         onclick="window.location.href='dog_vault.html'">
+      <div class="text-7xl mb-4">🐾</div>
+      <h2 class="text-4xl font-black mb-3">DOG VAULT</h2>
+      <p class="text-lg mb-4 opacity-90">
+        Viral TikTok doggo prompts. Zoomies, bark challenges, skibidi-woof energy.
+        Cute-safe only. Pure puppy rizz.
+      </p>
+      <div class="flex gap-3 text-xs font-bold">
+        <span class="px-3 py-1 bg-orange-600/30 rounded-full">WOOF</span>
+        <span class="px-3 py-1 bg-orange-600/30 rounded-full">ZOOMIES</span>
+        <span class="px-3 py-1 bg-orange-600/30 rounded-full">DOGGOS</span>
+      </div>
+      <div class="mt-6 text-right text-3xl font-black">ENTER →</div>
+    </div>
+
+    <!-- Cat Vault -->
+    <div class="vault-card bg-gradient-to-br from-purple-900/50 to-pink-900/50 border-2 border-purple-500 rounded-3xl p-8 text-purple-400"
+         onclick="window.location.href='cat_vault.html'">
+      <div class="text-7xl mb-4">🐱</div>
+      <h2 class="text-4xl font-black mb-3">CAT VAULT</h2>
+      <p class="text-lg mb-4 opacity-90">
+        Viral TikTok cat prompts. Zoomies, meow challenges, skibidi-purr energy.
+        Cute-safe only. Pure feline rizz.
+      </p>
+      <div class="flex gap-3 text-xs font-bold">
+        <span class="px-3 py-1 bg-purple-600/30 rounded-full">MEOW</span>
+        <span class="px-3 py-1 bg-purple-600/30 rounded-full">PURR</span>
+        <span class="px-3 py-1 bg-purple-600/30 rounded-full">LOAF</span>
+      </div>
+      <div class="mt-6 text-right text-3xl font-black">ENTER →</div>
+    </div>
+
+    <!-- Dino Vault -->
+    <div class="vault-card bg-gradient-to-br from-lime-900/50 to-emerald-900/50 border-2 border-lime-500 rounded-3xl p-8 text-lime-400"
+         onclick="window.location.href='dino_vault.html'">
+      <div class="text-7xl mb-4">🦖</div>
+      <h2 class="text-4xl font-black mb-3">DINO VAULT</h2>
+      <p class="text-lg mb-4 opacity-90">
+        Viral TikTok dino prompts. Stomp challenges, rawr energy, prehistoric rizz.
+        Roar-safe only. Pure fossil vibes.
+      </p>
+      <div class="flex gap-3 text-xs font-bold">
+        <span class="px-3 py-1 bg-lime-600/30 rounded-full">ROAR</span>
+        <span class="px-3 py-1 bg-lime-600/30 rounded-full">STOMP</span>
+        <span class="px-3 py-1 bg-lime-600/30 rounded-full">RAWR</span>
+      </div>
+      <div class="mt-6 text-right text-3xl font-black">ENTER →</div>
+    </div>
+
+  </div>
+
+  <!-- Info Section -->
+  <section class="bg-zinc-900/50 border border-purple-500/30 rounded-3xl p-10 mb-12">
+    <h3 class="text-3xl font-black text-purple-400 mb-6">🧠 WHAT ARE VAULTS?</h3>
+    <div class="grid md:grid-cols-2 gap-8 text-gray-300">
+      <div>
+        <h4 class="text-xl font-bold text-white mb-3">⚡ Single-File Architecture</h4>
+        <p>Each vault is ONE HTML file. No build tools. No npm hell. Just open and go viral.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-bold text-white mb-3">🎯 Infinite Generation</h4>
+        <p>Click "GO VIRAL" to generate new prompts on demand. Templates mutate infinitely.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-bold text-white mb-3">📋 One-Click Copy</h4>
+        <p>Copy prompts to clipboard. Paste into Midjourney, DALL-E, Flux, whatever. Done.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-bold text-white mb-3">🔥 Confetti Chaos</h4>
+        <p>Every generation triggers emoji confetti explosions. Because why not.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Specs -->
+  <section class="bg-zinc-900/50 border border-pink-500/30 rounded-3xl p-10 mb-12">
+    <h3 class="text-3xl font-black text-pink-400 mb-6">🔧 TECH STACK (MINIMALIST AF)</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="text-center">
+        <div class="text-5xl mb-2">📄</div>
+        <div class="font-bold text-xl">HTML</div>
+        <div class="text-sm opacity-70">Structure</div>
+      </div>
+      <div class="text-center">
+        <div class="text-5xl mb-2">🎨</div>
+        <div class="font-bold text-xl">Tailwind CDN</div>
+        <div class="text-sm opacity-70">Styling</div>
+      </div>
+      <div class="text-center">
+        <div class="text-5xl mb-2">⚡</div>
+        <div class="font-bold text-xl">Vanilla JS</div>
+        <div class="text-sm opacity-70">Logic</div>
+      </div>
+    </div>
+    <div class="mt-8 text-center">
+      <p class="text-gray-400">
+        <span class="text-white font-bold">Total dependencies:</span> ZERO (Tailwind via CDN doesn't count)<br>
+        <span class="text-white font-bold">Build process:</span> NONE (just open the file)<br>
+        <span class="text-white font-bold">Framework:</span> WHO NEEDS ONE
+      </p>
+    </div>
+  </section>
+
+  <!-- Coming Soon -->
+  <section class="text-center mb-12">
+    <h3 class="text-3xl font-black text-yellow-400 mb-6">🚀 COMING SOON™</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+      <div class="bg-zinc-900/50 border border-zinc-700 rounded-2xl p-4 opacity-50">
+        <div class="text-4xl mb-2">🎨</div>
+        <div class="font-bold">ART VAULT</div>
+      </div>
+      <div class="bg-zinc-900/50 border border-zinc-700 rounded-2xl p-4 opacity-50">
+        <div class="text-4xl mb-2">🚗</div>
+        <div class="font-bold">CAR VAULT</div>
+      </div>
+      <div class="bg-zinc-900/50 border border-zinc-700 rounded-2xl p-4 opacity-50">
+        <div class="text-4xl mb-2">🌆</div>
+        <div class="font-bold">CITY VAULT</div>
+      </div>
+      <div class="bg-zinc-900/50 border border-zinc-700 rounded-2xl p-4 opacity-50">
+        <div class="text-4xl mb-2">🎮</div>
+        <div class="font-bold">GAME VAULT</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-8 border-t border-zinc-800">
+    <p class="text-gray-500 text-sm mb-4">
+      Built for <span class="text-purple-400 font-bold">Brainrot Platform</span> •
+      Terminal-First Development •
+      Maximum Sigma Energy •
+      2026 Edition
+    </p>
+    <p class="text-xs text-gray-600">
+      No tracking. No analytics. No cookies. Just vaults.
+    </p>
+  </footer>
+
+</div>
+
+<script>
+// Easter egg: Konami code unlocks secret vault
+let konamiCode = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','KeyB','KeyA'];
+let konamiIndex = 0;
+
+document.addEventListener('keydown', (e) => {
+  if (e.code === konamiCode[konamiIndex]) {
+    konamiIndex++;
+    if (konamiIndex === konamiCode.length) {
+      alert('🎉 KONAMI CODE ACTIVATED!\n\nSecret vault coming soon...\nYou absolute legend.');
+      konamiIndex = 0;
+    }
+  } else {
+    konamiIndex = 0;
+  }
+});
+</script>
+
+</body>
+</html>

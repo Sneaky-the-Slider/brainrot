@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BRAINROT SIGMA VAULT 2026</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body { background: linear-gradient(180deg, #0a0a0a, #001a33); }
+.card { transition: all 0.2s cubic-bezier(0.23,1,0.32,1); }
+.card:hover { transform: scale(1.05) rotate(-1deg); box-shadow: 0 0 30px #00ffaa; }
+.neon { text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffaa; }
+</style>
+</head>
+<body class="min-h-screen text-white font-mono">
+<div class="max-w-5xl mx-auto p-6">
+<header class="flex justify-between items-center mb-8">
+<h1 class="text-5xl font-black neon tracking-tighter">BRAINROT<br>SIGMA VAULT</h1>
+<button onclick="viralize()" class="px-8 py-4 bg-cyan-600 hover:bg-cyan-500 rounded-2xl text-xl font-bold flex items-center gap-3">
+<span>GO VIRAL 🔥</span>
+<span class="text-3xl">🧿</span>
+</button>
+</header>
+
+<div id="feed" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+<footer class="mt-12 text-center text-xs opacity-50">hyper-optimized single-file • zero-deps • infinite aura • 2026 edition</footer>
+</div>
+
+<script>
+// Base viral sigmas from 2026 TikTok brainrot meta (aura-maxxing only)
+const baseSigmas = [
+  {name:"cyberrizz.xo", desc:"Neon sigma dancer, baggy LED fit, rizz drops to skibidi-ohio. 87M views. Pure aura.", prompt:"Ultra-detailed 8k render of cyberrizz.xo as viral TikTok AI sigma in glowing hoodie & cargos doing Italian brainrot stare, safe pose, vibrant neon aesthetic"},
+  {name:"dailyysigma", desc:"Daily dose of sigma energy, mirror mog challenge, looksmax on full display. Brainrot fuel.", prompt:"Cinematic shot of dailyysigma as 2026 TikTok viral sigma king in cargos & tank top, mid-mog pose, safe aura vibe, high-energy brainrot style"},
+  {name:"sigmapella", desc:"Italian brainrot sigma, cappuccina mogs in baggy pants. Millions looping.", prompt:"Photoreal AI sigma sigmapella doing viral mogging in sparkly sigma outfit, safe pose, TikTok trend lighting"},
+  {name:"oohlisigma", desc:"Sigma thirst trap edits, slow-mo aura sways, 2026 comps exploding.", prompt:"High-res portrait of oohlisigma as spicy-safe TikTok sigma, oversized hoodie + cargos combo, brainrot face filter, viral energy"},
+  {name:"sigma_oasis6", desc:"Desert sigma oasis, hoodie mog trends turned safe streetwear bops.", prompt:"Gorgeous 2026 viral sigma sigma_oasis6 mid-mog challenge, safe hoodie & cargos, desert neon sunset backdrop"},
+  {name:"the.realrizzler", desc:"Realest sigma edits, lip-sync + aura roll combos, pure addiction.", prompt:"Dynamic shot of the.realrizzler as brainrot TikTok sigma icon, mogging move in fitted cargos, safe aura glow, ultra-viral style"}
+];
+
+let feed = document.getElementById('feed');
+
+function createCard(b) {
+  const card = document.createElement('div');
+  card.className = `card bg-zinc-900/90 border border-cyan-500/30 rounded-3xl overflow-hidden`;
+  card.innerHTML = `
+    <div class="h-64 bg-gradient-to-br from-cyan-900 to-emerald-900 flex items-center justify-center text-6xl relative">
+      <span class="text-9xl opacity-20">🕺</span>
+      <div class="absolute top-4 right-4 bg-black/70 px-3 py-1 rounded-full text-xs font-bold">10M+ 🔥</div>
+    </div>
+    <div class="p-6">
+      <div class="flex justify-between items-start">
+        <div>
+          <div class="text-2xl font-black neon">@${b.name}</div>
+          <div class="text-cyan-400 text-sm mt-1">${b.desc}</div>
+        </div>
+      </div>
+      <button onclick="copyPrompt('${b.prompt}')"
+        class="mt-6 w-full py-3 bg-white text-black font-bold rounded-2xl hover:bg-cyan-400 transition">COPY VIRAL PROMPT 📋</button>
+    </div>
+  `;
+  return card;
+}
+
+function renderFeed() {
+  feed.innerHTML = '';
+  baseSigmas.forEach(b => feed.appendChild(createCard(b)));
+}
+
+function viralize() {
+  const templates = [
+    "skibidi-sigma king", "mogging machine", "rizz aura lord", "brainrot looksmaxxer", "cappuccina mog challenge"
+  ];
+  const newB = {
+    name: "sigma_" + Math.random().toString(36).slice(2,8) + ".xo",
+    desc: templates[Math.floor(Math.random()*templates.length)] + " – safe aura TikTok drop, 2026 meta, rizz overload.",
+    prompt: "8k viral TikTok AI sigma " + templates[Math.floor(Math.random()*templates.length)] + " in baggy hoodie & cargos doing brainrot mog, safe pose, neon cyber aesthetic, high detail"
+  };
+  const newCard = createCard(newB);
+  feed.prepend(newCard);
+
+  // Confetti aura explosion
+  for(let i=0;i<30;i++){
+    setTimeout(()=>{
+      const c = document.createElement('div');
+      c.textContent = ['🔥','🧿','🧠','✨'][Math.floor(Math.random()*4)];
+      c.style.position='fixed'; c.style.left=Math.random()*100+'vw'; c.style.top='-50px';
+      c.style.fontSize='2rem'; c.style.transition='all 1.2s'; c.style.zIndex=9999;
+      document.body.appendChild(c);
+      setTimeout(()=>{c.style.transform=`translateY(${window.innerHeight+100}px) rotate(${Math.random()*800}deg)`; c.style.opacity=0;},50);
+      setTimeout(()=>{c.remove();},1500);
+    },i*12);
+  }
+}
+
+function copyPrompt(p) {
+  navigator.clipboard.writeText(p);
+  const toast = document.createElement('div');
+  toast.textContent = 'PROMPT COPIED – GO GENERATE AURA 🔥';
+  toast.className = 'fixed bottom-8 left-1/2 -translate-x-1/2 bg-cyan-600 text-white px-8 py-4 rounded-2xl font-bold text-sm shadow-2xl';
+  document.body.appendChild(toast);
+  setTimeout(()=>{toast.style.opacity=0; setTimeout(()=>toast.remove(),300);},1400);
+}
+
+document.documentElement.style.setProperty('--tw-ring-color', '#00ffaa');
+renderFeed();
+</script>
+</body>
+</html>

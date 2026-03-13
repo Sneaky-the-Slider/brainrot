@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DeadpanBrainrotCollection",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/DeadpanBrainrotEntry"
+  },
+  "definitions": {
+    "DeadpanBrainrotEntry": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "deadpan_brainrot": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "deadpan_brainrot"],
+      "additionalProperties": false
+    }
+  }
+}

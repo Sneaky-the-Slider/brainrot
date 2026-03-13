@@ -1,0 +1,72 @@
+{
+  "title": "History of Phreaking (Non-Operational Summary)",
+  "subtitle": "A high-level, ethics-first overview of telecom curiosity and its decline",
+  "disclaimer": "This archive is historical and non-actionable. It omits operational details and does not endorse unauthorized access or abuse of telecom systems.",
+  "summary": "Phreaking describes a historical subculture that explored telephone networks during the analog and early digital eras. While it contributed to public awareness of system design and security gaps, it also crossed legal and ethical lines. Today, the techniques from that era are largely obsolete, and modern telecom systems are governed by stricter technical controls and laws.",
+  "timeline": [
+    {
+      "year": "1950s",
+      "label": "Analog era foundations",
+      "summary": "Long-distance networks relied on in-band signaling and manual operations, creating gaps that were later exploited or studied."
+    },
+    {
+      "year": "1960s",
+      "label": "Term emerges",
+      "summary": "The term "phreaking" began circulating among hobbyists and engineers exploring telecom systems out of curiosity."
+    },
+    {
+      "year": "1970s",
+      "label": "Public awareness",
+      "summary": "Media attention increased, along with controversy around underground guides and legal crackdowns."
+    },
+    {
+      "year": "1980s",
+      "label": "Shift to digital",
+      "summary": "Telecom infrastructure moved toward digital switching and stronger controls, reducing the relevance of analog-era exploits."
+    },
+    {
+      "year": "1990s",
+      "label": "Decline and migration",
+      "summary": "As networks modernized, many activities shifted toward early computer networks and internet security."
+    },
+    {
+      "year": "2000s",
+      "label": "VoIP era",
+      "summary": "Voice services increasingly ran over internet protocols, changing the threat model and regulatory landscape."
+    },
+    {
+      "year": "2010s",
+      "label": "Historical documentation",
+      "summary": "Researchers focused on oral histories, museum exhibits, and ethics-focused retrospectives."
+    },
+    {
+      "year": "2020s",
+      "label": "Modern context",
+      "summary": "Telecom security centers on privacy, lawful intercept, and infrastructure resilience rather than legacy exploits."
+    }
+  ],
+  "ethics_notes": [
+    "Curiosity is not a legal defense.",
+    "Unauthorized access or disruption is illegal and harmful.",
+    "Modern systems differ; historical techniques are obsolete.",
+    "Security research should be lawful and permission-based."
+  ],
+  "glossary": [
+    {
+      "term": "Phreaking",
+      "definition": "A historical subculture focused on understanding and sometimes misusing telephone systems."
+    },
+    {
+      "term": "In-band signaling",
+      "definition": "An older design where control signals traveled on the same channel as voice."
+    },
+    {
+      "term": "Digital switching",
+      "definition": "Modernized routing and control in telecom networks that reduced legacy weaknesses."
+    },
+    {
+      "term": "VoIP",
+      "definition": "Voice over Internet Protocol, where calls travel over data networks."
+    }
+  ]
+}

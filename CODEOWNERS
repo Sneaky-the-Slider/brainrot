@@ -1,0 +1,36 @@
+# Brainrot CODEOWNERS
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Core app
+app.js @Sneaky-the-Slider
+app.css @Sneaky-the-Slider
+index.html @Sneaky-the-Slider
+
+# Configuration
+BRAINROT_CONFIG.yml @Sneaky-the-Slider
+Makefile @Sneaky-the-Slider
+
+# Automation
+auto_edit.sh @Sneaky-the-Slider
+processor.py @Sneaky-the-Slider
+sigma_dash.py @Sneaky-the-Slider
+audit.sh @Sneaky-the-Slider
+
+# Channels content
+channels/ @Sneaky-the-Slider
+
+# Vaults
+vaults/ @Sneaky-the-Slider
+
+# Agents
+agents/ @Sneaky-the-Slider
+
+# Documentation
+*.md @Sneaky-the-Slider
+.github/ @Sneaky-the-Slider
+
+# GitHub workflows
+.github/workflows/ @Sneaky-the-Slider
+
+# All files default to primary maintainer
+* @Sneaky-the-Slider

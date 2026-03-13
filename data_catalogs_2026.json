@@ -1,0 +1,102 @@
+{
+  "title": "Data Catalogs 2026",
+  "subtitle": "Internal search and governance hubs for enterprise data",
+  "summary": "Data catalogs are centralized platforms that help organizations discover, understand, manage, and govern data assets. They index metadata from databases, warehouses, BI tools, and pipelines, enabling search, lineage, ownership, and compliance workflows.",
+  "capabilities": [
+    "Automated metadata ingestion and scanning",
+    "Search and discovery (including AI-assisted queries)",
+    "Data lineage tracking",
+    "Business glossary linking technical assets to business terms",
+    "Collaboration features (ratings, comments, ownership)",
+    "Governance and compliance (policies, classification, quality)",
+    "AI/ML enhancements (auto-classification, recommendations, copilots)"
+  ],
+  "market_trends_2026": [
+    "AI-driven automation and copilots are standard",
+    "Active metadata: real-time updates and recommendations",
+    "Self-service for business users",
+    "Deep integration with modern stacks (Snowflake, Databricks, dbt, BI tools)",
+    "Data mesh and data product ownership models"
+  ],
+  "tools": [
+    {
+      "tool": "Atlan",
+      "best_for": "Modern, collaborative teams; AI-first orgs",
+      "strengths": "Active metadata, strong lineage, auto-glossary, fast adoption",
+      "deployment": "Cloud-native",
+      "pricing": "Subscription (mid-high)",
+      "rating": "~4.5/5 (2026 est.)",
+      "drawbacks": "Less mature for heavy regulated governance"
+    },
+    {
+      "tool": "Collibra",
+      "best_for": "Regulated enterprises (finance, healthcare)",
+      "strengths": "Governance workflows, policy enforcement, compliance automation",
+      "deployment": "Cloud & on-prem",
+      "pricing": "Enterprise (high)",
+      "rating": "~4.2-4.4/5 (2026 est.)",
+      "drawbacks": "Steeper learning curve, higher cost"
+    },
+    {
+      "tool": "Alation",
+      "best_for": "Analytics-focused, self-service adoption",
+      "strengths": "Usage insights, NLP search, strong glossary",
+      "deployment": "Cloud & on-prem",
+      "pricing": "Enterprise (high)",
+      "rating": "~4.4/5 (2026 est.)",
+      "drawbacks": "Can feel legacy in pure AI workflows"
+    },
+    {
+      "tool": "Informatica (EDC / CDGC)",
+      "best_for": "Integration-heavy enterprises",
+      "strengths": "Broad connectors, AI scanning, suite integrations",
+      "deployment": "Cloud & on-prem",
+      "pricing": "Enterprise (very high)",
+      "rating": "~4.3/5 (2026 est.)",
+      "drawbacks": "Complex setup, vendor lock-in risk"
+    },
+    {
+      "tool": "Microsoft Purview",
+      "best_for": "Microsoft/Azure-centric stacks",
+      "strengths": "Unified governance, strong scanning, cost-effective for MS shops",
+      "deployment": "Cloud (Azure)",
+      "pricing": "Usage-based",
+      "rating": "High in MS context",
+      "drawbacks": "Less flexible outside Microsoft stack"
+    },
+    {
+      "tool": "data.world",
+      "best_for": "Collaborative, knowledge-graph approach",
+      "strengths": "Semantic relationships, business-friendly UI",
+      "deployment": "Cloud SaaS",
+      "pricing": "Subscription",
+      "rating": "Strong user praise",
+      "drawbacks": "Smaller scale for massive enterprises"
+    },
+    {
+      "tool": "AWS Glue Data Catalog",
+      "best_for": "AWS-native, cost-conscious teams",
+      "strengths": "Serverless, integrates with Athena/Redshift",
+      "deployment": "Cloud (AWS)",
+      "pricing": "Pay-per-use",
+      "rating": "Good for AWS",
+      "drawbacks": "Limited advanced governance features"
+    },
+    {
+      "tool": "Open-source options (DataHub, OpenMetadata, Amundsen)",
+      "best_for": "Budget-conscious or custom needs",
+      "strengths": "Customizable, community-driven lineage and search",
+      "deployment": "Self-hosted or cloud",
+      "pricing": "Free + hosting costs",
+      "rating": "Varies (4.0-4.5)",
+      "drawbacks": "Requires engineering effort to maintain"
+    }
+  ],
+  "recommendations": [
+    "Best overall active catalog: Atlan",
+    "Heavy governance and compliance: Collibra",
+    "Self-service analytics adoption: Alation",
+    "Enterprise suite integration: Informatica or Ataccama",
+    "Cloud-native and affordable: Microsoft Purview, AWS Glue, or open-source"
+  ]
+}
