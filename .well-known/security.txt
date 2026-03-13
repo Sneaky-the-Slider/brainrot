@@ -1,0 +1,6 @@
+Contact: security@brainrot.internal
+Expires: 2027-03-13T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://github.com/Sneaky-the-Slider/brainrot/blob/main/SECURITY.md
+Policy: https://github.com/Sneaky-the-Slider/brainrot/blob/main/SECURITY.md
+Acknowledgments: https://github.com/Sneaky-the-Slider/brainrot/blob/main/ACKNOWLEDGMENTS.md
