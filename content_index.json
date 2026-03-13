@@ -1,0 +1,1427 @@
+{
+  "generated_at": 1773406602,
+  "files": [
+    {
+      "path": ".github/workflows/pulse.yml",
+      "ext": "yml",
+      "bytes": 866,
+      "is_binary": false,
+      "preview": "name: IMPERIAL PULSE on: push: branches: [ feature/pulse-meter, hardening/atomic-refactor-67 ] schedule: - cron: '0 * * * *' jobs: autonomous-mutation: runs-on: ubuntu-latest permissions: contents: write issues: write steps: - name: Checkout Code uses: actions/checkout@v4 with: fetch-depth: 0 - name: Run Mutation Engin",
+      "group": ".github",
+      "rating": "general"
+    },
+    {
+      "path": "BRAINROT_CONFIG.yml",
+      "ext": "yml",
+      "bytes": 578,
+      "is_binary": false,
+      "preview": "# BRAINROT SYSTEM CONFIGURATION v1.0.0 # STATUS: CRITICAL | PROTOCOL: SIGMA core_parameters: absolute_velocity: enabled neural_load_limit: 99 dopamine_loop: recursive ohio_containment: active metrics_thresholds: rizz_index: min: 800 max: 9001 current: 4200 fanum_tax_rate: 0.05 skibidi_latency: 0.2ms subsystems: - id: s",
+      "group": "BRAINROT_CONFIG.yml",
+      "rating": "general"
+    },
+    {
+      "path": "CLAUDE.md",
+      "ext": "md",
+      "bytes": 4944,
+      "is_binary": false,
+      "preview": "# CLAUDE.md This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository. ## Project Overview Brainrot is a community-driven learning platform that teaches through real code examples rather than tutorials. The philosophy: \"Learn code. Read real examples. Make your own decisions.",
+      "group": "CLAUDE.md",
+      "rating": "general"
+    },
+    {
+      "path": "CONTRIBUTORS",
+      "ext": "(none)",
+      "bytes": 317,
+      "is_binary": false,
+      "preview": "# Project Contributors We appreciate the contributions and help from everyone in the community! - **Turbo** (@Turbo-the-tech-dev) - Project Lead & Architect - **Gemini CLI** - AI Development Assistant If you've helped with research, code, or documentation, please feel free to add yourself here in a Pull Request!",
+      "group": "CONTRIBUTORS",
+      "rating": "general"
+    },
+    {
+      "path": "GEMINI.md",
+      "ext": "md",
+      "bytes": 0,
+      "is_binary": false,
+      "preview": "",
+      "group": "GEMINI.md",
+      "rating": "general"
+    },
+    {
+      "path": "GEMINI_BRAINROT.md",
+      "ext": "md",
+      "bytes": 239,
+      "is_binary": false,
+      "preview": "# GEMINI BRAINROT MANIFEST ## System Log: 2026-03-10 The Absolute Velocity protocol has been achieved. Current status: **CRITICAL**. - [x] Repo Hardened - [x] Triage Bot Online - [x] 163 PR Milestone reached - [ ] Final Sigma Convergence",
+      "group": "GEMINI_BRAINROT.md",
+      "rating": "general"
+    },
+    {
+      "path": "GEMINI_BRAINROT.md.~1~",
+      "ext": "~1~",
+      "bytes": 3308,
+      "is_binary": false,
+      "preview": "# Turbo Project Resource & Asset Hub ## Project Overview This directory serves as a centralized **Knowledge Base and Resource Hub** for experimentation with automation, AI research, and technical documentation. It is not a single software project but rather a curated collection of data, tools, and research materials. T",
+      "group": "GEMINI_BRAINROT.md.~1~",
+      "rating": "general"
+    },
+    {
+      "path": "Makefile",
+      "ext": "(none)",
+      "bytes": 1109,
+      "is_binary": false,
+      "preview": "# ============================================================================== # IMPERIAL COMMAND: MASTER CONTROL MAKEFILE # ============================================================================== .PHONY: help dashboard mutate pulse status help: @echo \">> AVAILABLE PROTOCOLS:\" @echo \" make dashboard - Launch t",
+      "group": "Makefile",
+      "rating": "general"
+    },
+    {
+      "path": "README.md",
+      "ext": "md",
+      "bytes": 4369,
+      "is_binary": false,
+      "preview": "<div align=\"center\"> ``` ``` **Learn code. Read real examples. Make your own decisions.** *Brainrot voice. Sigma discipline. Zero hand-holding.* ![Status](https://img.shields.io/badge/status-building-00e5ff?style=flat-square) ![License](https://img.shi",
+      "group": "README.md",
+      "rating": "general"
+    },
+    {
+      "path": "STARK_AGENTS.md",
+      "ext": "md",
+      "bytes": 14510,
+      "is_binary": false,
+      "preview": "# STARK_AGENTS.md **J.A.R.V.I.S. Protocol: AI Agent Configuration for Brainrot Repository** *\"Sometimes you gotta run before you can walk.\" - Tony Stark* --- ## JARVIS System Boot Sequence **Sir, I've analyzed the Brainrot repository. Here's what you need to know:** This isn't your typical GitHub repo. It's a self-modi",
+      "group": "STARK_AGENTS.md",
+      "rating": "general"
+    },
+    {
+      "path": "SUPPORT.md",
+      "ext": "md",
+      "bytes": 792,
+      "is_binary": false,
+      "preview": "# Support Guide If you need help with anything in this repository, here are the best ways to get it: ## Documentation - Check the `README.md` for general information. - Refer to `GEMINI_BRAINROT.md` for the project hub overview. - Look into the specific subdirectories for technical manuals (e.g., `pdf/` for lock manual",
+      "group": "SUPPORT.md",
+      "rating": "general"
+    },
+    {
+      "path": "YODA_AGENTS.md",
+      "ext": "md",
+      "bytes": 8506,
+      "is_binary": false,
+      "preview": "# YODA_AGENTS.md **Configuration file for Grok and other AI agents working in the Brainrot repository.** *When 900 years old you reach, code as clean you must write.* --- ## Agent Prime Directives 1. **Understand the Vibe** - This is not corporate code. Brainrot uses creative terminology (Ohio risk, rizz index, sigma p",
+      "group": "YODA_AGENTS.md",
+      "rating": "general"
+    },
+    {
+      "path": "absolute_velocity.json",
+      "ext": "json",
+      "bytes": 422,
+      "is_binary": false,
+      "preview": "{ \"scenarios\": [ {\"id\": \"V01\", \"name\": \"Atomic Buffer Saturation\", \"priority\": \"CRITICAL\"}, {\"id\": \"V02\", \"name\": \"Neural Load Balancing\", \"priority\": \"HIGH\"}, {\"id\": \"V03\", \"name\": \"Sigma Branch Convergence\", \"priority\": \"STABLE\"}, {\"id\": \"V04\", \"name\": \"Recursive Repository Terraforming\", \"priority\": \"MAXIMUM\"} ], \"m",
+      "group": "absolute_velocity.json",
+      "rating": "general"
+    },
+    {
+      "path": "agents/CHAIN_OF_COMMAND.md",
+      "ext": "md",
+      "bytes": 3953,
+      "is_binary": false,
+      "preview": "# AGENT PYRAMID: CHAIN OF COMMAND **Ternary Command Structure | 100 Agents | 5 Hierarchy Levels** --- ## Level 1: Supreme Commander **001_LunaBytefox** - Apex Predator - Commands: 3 direct reports - Scope: Entire agent pyramid - Specialty: Strategic oversight & brainrot coordination --- ## Level 2: Division Commanders ",
+      "group": "agents",
+      "rating": "general"
+    },
+    {
+      "path": "app.css",
+      "ext": "css",
+      "bytes": 8215,
+      "is_binary": false,
+      "preview": ":root { color-scheme: light; --bg-1: #090d16; --bg-2: #141b2f; --bg-3: #1b2238; --panel: rgba(13, 18, 34, 0.92); --panel-border: rgba(130, 148, 191, 0.25); --accent: #ff4f73; --accent-2: #4cffc4; --accent-3: #ffe36e; --text: #eef1ff; --muted: #a3acc3; --shadow: 0 18px 50px rgba(2, 6, 22, 0.55); --mono: \"JetBrains Mono\"",
+      "group": "app.css",
+      "rating": "general"
+    },
+    {
+      "path": "app.js",
+      "ext": "js",
+      "bytes": 13381,
+      "is_binary": false,
+      "preview": "const TOTAL_PROMPTS = 20; const params = new URLSearchParams(window.location.search); const DEADPAN_PATH = \"deadpan-brainrot-testing/deadpan-brainrot.json\"; const CATALOG_PATH = \"data_catalogs_2026.json\"; const requested = Number(params.get(\"n\")); let currentIndex = Number.isFinite(requested) && requested >= 1 && reque",
+      "group": "app.js",
+      "rating": "general"
+    },
+    {
+      "path": "audit.sh",
+      "ext": "sh",
+      "bytes": 6399,
+      "is_binary": false,
+      "preview": "#!/bin/bash # Repository Health & Infrastructure Audit Script # Bundles 30 checks for documentation, DX, security, and architecture. # Colors for output RED='\\033[0;31m' GREEN='\\033[0;32m' YELLOW='\\033[1;33m' BLUE='\\033[0;34m' NC='\\033[0m' # No Color REPORT_ONLY=true if [[ \"$1\" == \"--apply\" ]]; then REPORT_ONLY=false e",
+      "group": "audit.sh",
+      "rating": "general"
+    },
+    {
+      "path": "auto_edit.sh",
+      "ext": "sh",
+      "bytes": 1124,
+      "is_binary": false,
+      "preview": "#!/bin/bash # ============================================================================== # IMPERIAL COMMAND: AUTONOMOUS MUTATION ENGINE # ============================================================================== # This script simulates a self-aware repository continuously optimizing itself. TARGET_MD=\"GEMINI_B",
+      "group": "auto_edit.sh",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot bitches.md",
+      "ext": "md",
+      "bytes": 247,
+      "is_binary": false,
+      "preview": "# Experimental Data Logs > \"Maximum results with zero prosecutable footprints.\" - Log 01: Initial brainrot detected in root directory. - Log 02: Attempting to synchronize rizz levels with terminal CSS. - Log 03: Success. Ohio has been contained.",
+      "group": "brainrot bitches.md",
+      "rating": "mature"
+    },
+    {
+      "path": "brainrot bitches.md.~1~",
+      "ext": "~1~",
+      "bytes": 11857,
+      "is_binary": false,
+      "preview": "I seen somebody had a viral Instagram with Ai girls, pretty girls,, let's create brain rot bitches a new Instagram themed account.... give me 10 ideas in json for this acccount. I want sexy women mocking what's viral which seemed to be brain rot my last research., input would be appreciated { \"ideas\": [ { \"id\": 1, \"tit",
+      "group": "brainrot bitches.md.~1~",
+      "rating": "mature"
+    },
+    {
+      "path": "brainrot bitches.md.~2~",
+      "ext": "~2~",
+      "bytes": 11857,
+      "is_binary": false,
+      "preview": "I seen somebody had a viral Instagram with Ai girls, pretty girls,, let's create brain rot bitches a new Instagram themed account.... give me 10 ideas in json for this acccount. I want sexy women mocking what's viral which seemed to be brain rot my last research., input would be appreciated { \"ideas\": [ { \"id\": 1, \"tit",
+      "group": "brainrot bitches.md.~2~",
+      "rating": "mature"
+    },
+    {
+      "path": "brainrot.json",
+      "ext": "json",
+      "bytes": 3956,
+      "is_binary": false,
+      "preview": "{ \"version\": \"2026-03-13-brainrot\", \"description\": \"free trial LLMs but make it bussin no cap fr fr\", \"author\": \"C-3PO (Junior Developer) + Brainrot Platform\", \"ohio_containment_level\": \"MAXIMUM\", \"rizz_index\": 9001, \"llms\": [ { \"name\": \"Kimi (Moonshot AI)\", \"tier\": \"the most sigma free trial fr\", \"vibe\": \"1M token con",
+      "group": "brainrot.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot/.project_root",
+      "ext": "(none)",
+      "bytes": 41,
+      "is_binary": false,
+      "preview": "/data/data/com.termux/files/home/brainrot",
+      "group": "brainrot",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot/.project_root.~1~",
+      "ext": "~1~",
+      "bytes": 41,
+      "is_binary": false,
+      "preview": "/data/data/com.termux/files/home/brainrot",
+      "group": "brainrot",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot/chats/session-2026-03-08T02-49-803836d8.json",
+      "ext": "json",
+      "bytes": 83007,
+      "is_binary": false,
+      "preview": "{ \"sessionId\": \"803836d8-723a-49ce-a7b1-47cf42759d50\", \"projectHash\": \"a0036d04afedcbcba336c7a36b7c33e4c2dc86c814c206277f858fc730a351c1\", \"startTime\": \"2026-03-08T02:50:22.623Z\", \"lastUpdated\": \"2026-03-08T05:16:55.612Z\", \"messages\": [ { \"id\": \"ce69591f-d7e0-489b-9571-cd2ee0c4461b\", \"timestamp\": \"2026-03-08T02:50:22.62",
+      "group": "brainrot",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot/chats/session-2026-03-08T05-16-eef53384.json",
+      "ext": "json",
+      "bytes": 27239,
+      "is_binary": false,
+      "preview": "{ \"sessionId\": \"eef53384-f92c-407c-bc94-e10f405e013f\", \"projectHash\": \"a0036d04afedcbcba336c7a36b7c33e4c2dc86c814c206277f858fc730a351c1\", \"startTime\": \"2026-03-08T05:17:15.394Z\", \"lastUpdated\": \"2026-03-08T05:17:40.635Z\", \"messages\": [ { \"id\": \"8dafb600-1fc0-442b-90be-562cbe06e50a\", \"timestamp\": \"2026-03-08T05:17:15.39",
+      "group": "brainrot",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot/logs.json",
+      "ext": "json",
+      "bytes": 1968,
+      "is_binary": false,
+      "preview": "[ { \"sessionId\": \"803836d8-723a-49ce-a7b1-47cf42759d50\", \"messageId\": 0, \"type\": \"user\", \"message\": \"brainrot\\n##\\n## prompts:\\n \\\" exlain the \\\"why\\\" \\\"\\n ## fpr example\\n \\\" behind... \\\"\\n ## user input\\n brainrot\\n ## we will use this a our examople for a template\\n # how\\n gemini -p \\\" explain the why behind brainr",
+      "group": "brainrot",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_extracted/files/Take a look! \ud83d\udccc",
+      "ext": "(none)",
+      "bytes": 42,
+      "is_binary": false,
+      "preview": "Take a look! https://pin.it/3vQi1BbpU",
+      "group": "brainrot_extracted",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_extracted/files/rclone-help",
+      "ext": "(none)",
+      "bytes": 3560,
+      "is_binary": false,
+      "preview": "Usage: rclone [flags] rclone [command] Available commands: about Get quota information from the remote. archive Perform an action on an archive. authorize Remote authorization. backend Run a backend-specific command. bisync Perform bidirectional synchronization between two paths. cat Concatenates any files and sends th",
+      "group": "brainrot_extracted",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_extracted/files/rclone-help.0.0.02",
+      "ext": "02",
+      "bytes": 3663,
+      "is_binary": false,
+      "preview": "Usage: ## rclone [flags] explain best use case scenarios wherever i place the hash ## rclone [command] Available commands: about Get quota information from the remote. ## archive Perform an action on an archive. ## authorize Remote authorization. ## backend Run a backend-specific command. ## bisync Perform bidirectiona",
+      "group": "brainrot_extracted",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_1.json",
+      "ext": "json",
+      "bytes": 491,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 816971, \"status\": \"SIGMA_GRINDSET\", \"fanum_tax_applied\": \"63%\", \"mewing_streak_days\": 842, \"payload\": { \"content\": \"Grimace Shake Pookie Mewing Gooning Blue Tie Kid Chat is this real Gronk Sticking out your gyatt for the rizzler Sigma Ohio\", \"source\": \"Sector_31\", \"integrity\": \"0% STABLE\" }, \"tags\":",
+      "group": "brainrot_payload_1.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_10.json",
+      "ext": "json",
+      "bytes": 500,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 523320, \"status\": \"AURA_PEAKING\", \"fanum_tax_applied\": \"19%\", \"mewing_streak_days\": 683, \"payload\": { \"content\": \"Erm what the sigma Sticking out your gyatt for the rizzler Negative Rizz Skibidi Pookie Glazing Bibi Gyatt Gooning Delulu\", \"source\": \"Sector_8\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"L",
+      "group": "brainrot_payload_10.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_11.json",
+      "ext": "json",
+      "bytes": 490,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 211748, \"status\": \"MAX_RIZZ_ATTAINED\", \"fanum_tax_applied\": \"33%\", \"mewing_streak_days\": 86, \"payload\": { \"content\": \"Aura Edging Mogging Sticking out your gyatt for the rizzler Fanum Tax Baby Alien Delulu Ice Spice Erm what the sigma Mewing\", \"source\": \"Sector_59\", \"integrity\": \"0% STABLE\" }, \"tags",
+      "group": "brainrot_payload_11.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_12.json",
+      "ext": "json",
+      "bytes": 473,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 352393, \"status\": \"AURA_PEAKING\", \"fanum_tax_applied\": \"7%\", \"mewing_streak_days\": 578, \"payload\": { \"content\": \"Ohio Bibi Baby Alien Glazing Blue Tie Kid Looksmaxxing Sigma Skibidi Ice Spice Pookie\", \"source\": \"Sector_43\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Chat is this real\", \"Erm what the sig",
+      "group": "brainrot_payload_12.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_13.json",
+      "ext": "json",
+      "bytes": 484,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 558282, \"status\": \"SKIBIDI_CERTIFIED\", \"fanum_tax_applied\": \"53%\", \"mewing_streak_days\": 703, \"payload\": { \"content\": \"Skibidi Gronk Sticking out your gyatt for the rizzler Grimace Shake Gooning Livvy Dunne Ipad Kid Gyatt Bibi Mewing\", \"source\": \"Sector_43\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Oh",
+      "group": "brainrot_payload_13.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_14.json",
+      "ext": "json",
+      "bytes": 506,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 282808, \"status\": \"MAX_RIZZ_ATTAINED\", \"fanum_tax_applied\": \"3%\", \"mewing_streak_days\": 385, \"payload\": { \"content\": \"Baby Gronk Sticking out your gyatt for the rizzler Fanum Tax Skibidi Edging Sigma Blue Tie Kid Livvy Dunne Grimace Shake Aura\", \"source\": \"Sector_43\", \"integrity\": \"0% STABLE\" }, \"ta",
+      "group": "brainrot_payload_14.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_15.json",
+      "ext": "json",
+      "bytes": 468,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 938884, \"status\": \"AURA_PEAKING\", \"fanum_tax_applied\": \"21%\", \"mewing_streak_days\": 582, \"payload\": { \"content\": \"Kai Cenat Ice Spice Blue Tie Kid Baby Alien Looksmaxxing Bibi Cocomelon Baby Gronk Gyatt Fanum Tax\", \"source\": \"Sector_37\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Cocomelon\", \"Baby Alien",
+      "group": "brainrot_payload_15.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_16.json",
+      "ext": "json",
+      "bytes": 503,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 552291, \"status\": \"SKIBIDI_CERTIFIED\", \"fanum_tax_applied\": \"59%\", \"mewing_streak_days\": 494, \"payload\": { \"content\": \"Ice Spice Cocomelon Bibi Gronk Fanum Tax Blue Tie Kid Sticking out your gyatt for the rizzler Chat is this real Aura Skibidi\", \"source\": \"Sector_24\", \"integrity\": \"0% STABLE\" }, \"ta",
+      "group": "brainrot_payload_16.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_17.json",
+      "ext": "json",
+      "bytes": 462,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 966281, \"status\": \"SIGMA_GRINDSET\", \"fanum_tax_applied\": \"22%\", \"mewing_streak_days\": 235, \"payload\": { \"content\": \"Ipad Kid Edging Livvy Dunne Skibidi Baby Gronk Sigma Gyatt Delulu Mogging Mewing\", \"source\": \"Sector_29\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Cocomelon\", \"Gyatt\", \"Ohio\", \"Chat is t",
+      "group": "brainrot_payload_17.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_18.json",
+      "ext": "json",
+      "bytes": 481,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 602583, \"status\": \"OHIO_FINAL_BOSS\", \"fanum_tax_applied\": \"91%\", \"mewing_streak_days\": 15, \"payload\": { \"content\": \"Mogging Aura Blue Tie Kid Ice Spice Negative Rizz Erm what the sigma Fanum Tax Gyatt Rizzler Gronk\", \"source\": \"Sector_22\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Looksmaxxing\", \"Ohio\"",
+      "group": "brainrot_payload_18.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_19.json",
+      "ext": "json",
+      "bytes": 521,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 863545, \"status\": \"AURA_PEAKING\", \"fanum_tax_applied\": \"25%\", \"mewing_streak_days\": 839, \"payload\": { \"content\": \"Blue Tie Kid Skibidi Mogging Baby Alien Livvy Dunne Bibi Glazing Gyatt Sticking out your gyatt for the rizzler Ice Spice\", \"source\": \"Sector_38\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"I",
+      "group": "brainrot_payload_19.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_2.json",
+      "ext": "json",
+      "bytes": 571,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 811865, \"status\": \"SIGMA_GRINDSET\", \"fanum_tax_applied\": \"90%\", \"mewing_streak_days\": 770, \"payload\": { \"content\": \"Kai Cenat Looksmaxxing Sticking out your gyatt for the rizzler Grimace Shake Livvy Dunne Gyatt Ice Spice Blue Tie Kid Delulu Negative Rizz\", \"source\": \"Sector_24\", \"integrity\": \"0% STA",
+      "group": "brainrot_payload_2.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_20.json",
+      "ext": "json",
+      "bytes": 494,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 705378, \"status\": \"OHIO_FINAL_BOSS\", \"fanum_tax_applied\": \"69%\", \"mewing_streak_days\": 512, \"payload\": { \"content\": \"Grimace Shake Gyatt Blue Tie Kid Mewing Kai Cenat Ohio Glazing Ice Spice Fanum Tax Sticking out your gyatt for the rizzler\", \"source\": \"Sector_67\", \"integrity\": \"0% STABLE\" }, \"tags\":",
+      "group": "brainrot_payload_20.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_21.json",
+      "ext": "json",
+      "bytes": 482,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 572673, \"status\": \"AURA_PEAKING\", \"fanum_tax_applied\": \"76%\", \"mewing_streak_days\": 86, \"payload\": { \"content\": \"Blue Tie Kid Sticking out your gyatt Mewing Baby Alien Livvy Dunne Delulu Gyatt Fanum Tax Sigma Gooning\", \"source\": \"Sector_45\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Edging\", \"Skibidi\",",
+      "group": "brainrot_payload_21.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_22.json",
+      "ext": "json",
+      "bytes": 515,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 254240, \"status\": \"MAX_RIZZ_ATTAINED\", \"fanum_tax_applied\": \"37%\", \"mewing_streak_days\": 452, \"payload\": { \"content\": \"Baby Gronk Pookie Ipad Kid Negative Rizz Sticking out your gyatt for the rizzler Mewing Sigma Gronk Erm what the sigma Edging\", \"source\": \"Sector_81\", \"integrity\": \"0% STABLE\" }, \"t",
+      "group": "brainrot_payload_22.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_23.json",
+      "ext": "json",
+      "bytes": 468,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 74860, \"status\": \"MAX_RIZZ_ATTAINED\", \"fanum_tax_applied\": \"52%\", \"mewing_streak_days\": 297, \"payload\": { \"content\": \"Negative Rizz Grimace Shake Cocomelon Livvy Dunne Chat is this real Aura Skibidi Ohio Gyatt Kai Cenat\", \"source\": \"Sector_85\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Aura\", \"Delulu\",",
+      "group": "brainrot_payload_23.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_24.json",
+      "ext": "json",
+      "bytes": 540,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 66214, \"status\": \"SKIBIDI_CERTIFIED\", \"fanum_tax_applied\": \"86%\", \"mewing_streak_days\": 231, \"payload\": { \"content\": \"Erm what the sigma Glazing Sticking out your gyatt for the rizzler Skibidi Kai Cenat Ohio Looksmaxxing Gyatt Mewing Negative Rizz\", \"source\": \"Sector_51\", \"integrity\": \"0% STABLE\" },",
+      "group": "brainrot_payload_24.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_25.json",
+      "ext": "json",
+      "bytes": 527,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 281372, \"status\": \"SKIBIDI_CERTIFIED\", \"fanum_tax_applied\": \"68%\", \"mewing_streak_days\": 12, \"payload\": { \"content\": \"Livvy Dunne Ipad Kid Grimace Shake Erm what the sigma Sticking out your gyatt Pookie Looksmaxxing Ohio Edging Sigma\", \"source\": \"Sector_29\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Ka",
+      "group": "brainrot_payload_25.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_26.json",
+      "ext": "json",
+      "bytes": 489,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 103047, \"status\": \"AURA_PEAKING\", \"fanum_tax_applied\": \"91%\", \"mewing_streak_days\": 306, \"payload\": { \"content\": \"Rizzler Glazing Baby Gronk Kai Cenat Ipad Kid Baby Alien Cocomelon Pookie Sticking out your gyatt Aura\", \"source\": \"Sector_14\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Erm what the sigma\"",
+      "group": "brainrot_payload_26.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_27.json",
+      "ext": "json",
+      "bytes": 507,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 573029, \"status\": \"SKIBIDI_CERTIFIED\", \"fanum_tax_applied\": \"36%\", \"mewing_streak_days\": 895, \"payload\": { \"content\": \"Sticking out your gyatt Ipad Kid Livvy Dunne Bibi Ohio Mewing Sigma Aura Fanum Tax Sticking out your gyatt for the rizzler\", \"source\": \"Sector_23\", \"integrity\": \"0% STABLE\" }, \"tags",
+      "group": "brainrot_payload_27.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_28.json",
+      "ext": "json",
+      "bytes": 506,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 950809, \"status\": \"SKIBIDI_CERTIFIED\", \"fanum_tax_applied\": \"12%\", \"mewing_streak_days\": 854, \"payload\": { \"content\": \"Delulu Fanum Tax Pookie Kai Cenat Ipad Kid Baby Alien Livvy Dunne Ice Spice Mewing Looksmaxxing\", \"source\": \"Sector_72\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Edging\", \"Cocomelon\",",
+      "group": "brainrot_payload_28.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_29.json",
+      "ext": "json",
+      "bytes": 489,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 272939, \"status\": \"AURA_PEAKING\", \"fanum_tax_applied\": \"59%\", \"mewing_streak_days\": 655, \"payload\": { \"content\": \"Livvy Dunne Rizzler Delulu Sigma Skibidi Fanum Tax Aura Gronk Kai Cenat Looksmaxxing\", \"source\": \"Sector_84\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Skibidi\", \"Gyatt\", \"Baby Alien\", \"Gri",
+      "group": "brainrot_payload_29.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_3.json",
+      "ext": "json",
+      "bytes": 464,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 807713, \"status\": \"SIGMA_GRINDSET\", \"fanum_tax_applied\": \"60%\", \"mewing_streak_days\": 319, \"payload\": { \"content\": \"Ipad Kid Negative Rizz Mewing Baby Alien Looksmaxxing Sigma Skibidi Fanum Tax Aura Ice Spice\", \"source\": \"Sector_90\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Looksmaxxing\", \"Aura\", \"Ohi",
+      "group": "brainrot_payload_3.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_30.json",
+      "ext": "json",
+      "bytes": 490,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 853574, \"status\": \"SKIBIDI_CERTIFIED\", \"fanum_tax_applied\": \"48%\", \"mewing_streak_days\": 714, \"payload\": { \"content\": \"Bibi Sticking out your gyatt Ipad Kid Looksmaxxing Gronk Rizzler Edging Ice Spice Sigma Gooning\", \"source\": \"Sector_63\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Negative Rizz\", \"Mewi",
+      "group": "brainrot_payload_30.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_31.json",
+      "ext": "json",
+      "bytes": 544,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 56410, \"status\": \"SIGMA_GRINDSET\", \"fanum_tax_applied\": \"64%\", \"mewing_streak_days\": 89, \"payload\": { \"content\": \"Grimace Shake Livvy Dunne Pookie Cocomelon Delulu Sticking out your gyatt for the rizzler Erm what the sigma Sigma Ice Spice Sticking out your gyatt\", \"source\": \"Sector_64\", \"integrity\":",
+      "group": "brainrot_payload_31.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_32.json",
+      "ext": "json",
+      "bytes": 531,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 175812, \"status\": \"SKIBIDI_CERTIFIED\", \"fanum_tax_applied\": \"7%\", \"mewing_streak_days\": 564, \"payload\": { \"content\": \"Sticking out your gyatt Mewing Ice Spice Kai Cenat Baby Alien Ipad Kid Rizzler Baby Gronk Fanum Tax Cocomelon\", \"source\": \"Sector_10\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Ice Spic",
+      "group": "brainrot_payload_32.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_33.json",
+      "ext": "json",
+      "bytes": 492,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 508649, \"status\": \"MAX_RIZZ_ATTAINED\", \"fanum_tax_applied\": \"15%\", \"mewing_streak_days\": 840, \"payload\": { \"content\": \"Rizzler Sticking out your gyatt for the rizzler Gyatt Sigma Baby Gronk Glazing Grimace Shake Aura Delulu Bibi\", \"source\": \"Sector_95\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Erm wha",
+      "group": "brainrot_payload_33.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_34.json",
+      "ext": "json",
+      "bytes": 514,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 324746, \"status\": \"SKIBIDI_CERTIFIED\", \"fanum_tax_applied\": \"50%\", \"mewing_streak_days\": 229, \"payload\": { \"content\": \"Glazing Ipad Kid Looksmaxxing Livvy Dunne Blue Tie Kid Rizzler Kai Cenat Gronk Pookie Fanum Tax\", \"source\": \"Sector_74\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Ipad Kid\", \"Gooning\",",
+      "group": "brainrot_payload_34.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_35.json",
+      "ext": "json",
+      "bytes": 532,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 501389, \"status\": \"SKIBIDI_CERTIFIED\", \"fanum_tax_applied\": \"6%\", \"mewing_streak_days\": 787, \"payload\": { \"content\": \"Rizzler Cocomelon Sticking out your gyatt Mewing Gooning Sticking out your gyatt for the rizzler Chat is this real Blue Tie Kid Ohio Looksmaxxing\", \"source\": \"Sector_35\", \"integrity\"",
+      "group": "brainrot_payload_35.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_36.json",
+      "ext": "json",
+      "bytes": 504,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 860350, \"status\": \"OHIO_FINAL_BOSS\", \"fanum_tax_applied\": \"32%\", \"mewing_streak_days\": 140, \"payload\": { \"content\": \"Baby Gronk Gronk Sticking out your gyatt for the rizzler Ohio Edging Grimace Shake Cocomelon Erm what the sigma Fanum Tax Delulu\", \"source\": \"Sector_46\", \"integrity\": \"0% STABLE\" }, \"",
+      "group": "brainrot_payload_36.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_37.json",
+      "ext": "json",
+      "bytes": 497,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 820537, \"status\": \"MAX_RIZZ_ATTAINED\", \"fanum_tax_applied\": \"20%\", \"mewing_streak_days\": 651, \"payload\": { \"content\": \"Mewing Sticking out your gyatt Cocomelon Edging Gronk Blue Tie Kid Ipad Kid Ice Spice Negative Rizz Erm what the sigma\", \"source\": \"Sector_97\", \"integrity\": \"0% STABLE\" }, \"tags\": [",
+      "group": "brainrot_payload_37.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_38.json",
+      "ext": "json",
+      "bytes": 529,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 419969, \"status\": \"OHIO_FINAL_BOSS\", \"fanum_tax_applied\": \"10%\", \"mewing_streak_days\": 421, \"payload\": { \"content\": \"Erm what the sigma Bibi Fanum Tax Livvy Dunne Negative Rizz Grimace Shake Ipad Kid Sticking out your gyatt for the rizzler Aura Delulu\", \"source\": \"Sector_41\", \"integrity\": \"0% STABLE",
+      "group": "brainrot_payload_38.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_39.json",
+      "ext": "json",
+      "bytes": 461,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 618000, \"status\": \"SIGMA_GRINDSET\", \"fanum_tax_applied\": \"10%\", \"mewing_streak_days\": 559, \"payload\": { \"content\": \"Gyatt Pookie Ipad Kid Fanum Tax Livvy Dunne Mogging Baby Alien Gooning Erm what the sigma Glazing\", \"source\": \"Sector_18\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Sigma\", \"Ohio\", \"Grima",
+      "group": "brainrot_payload_39.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_4.json",
+      "ext": "json",
+      "bytes": 511,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 333792, \"status\": \"SIGMA_GRINDSET\", \"fanum_tax_applied\": \"33%\", \"mewing_streak_days\": 738, \"payload\": { \"content\": \"Looksmaxxing Ohio Glazing Grimace Shake Chat is this real Pookie Kai Cenat Delulu Baby Alien Bibi\", \"source\": \"Sector_21\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Rizzler\", \"Sticking ou",
+      "group": "brainrot_payload_4.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_40.json",
+      "ext": "json",
+      "bytes": 511,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 276519, \"status\": \"MAX_RIZZ_ATTAINED\", \"fanum_tax_applied\": \"66%\", \"mewing_streak_days\": 410, \"payload\": { \"content\": \"Bibi Grimace Shake Gyatt Looksmaxxing Pookie Baby Gronk Livvy Dunne Edging Skibidi Ipad Kid\", \"source\": \"Sector_1\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Sticking out your gyatt fo",
+      "group": "brainrot_payload_40.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_41.json",
+      "ext": "json",
+      "bytes": 533,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 356105, \"status\": \"SKIBIDI_CERTIFIED\", \"fanum_tax_applied\": \"24%\", \"mewing_streak_days\": 627, \"payload\": { \"content\": \"Sticking out your gyatt for the rizzler Ipad Kid Skibidi Livvy Dunne Looksmaxxing Erm what the sigma Gooning Ohio Sigma Mewing\", \"source\": \"Sector_74\", \"integrity\": \"0% STABLE\" }, \"",
+      "group": "brainrot_payload_41.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_42.json",
+      "ext": "json",
+      "bytes": 483,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 211344, \"status\": \"SIGMA_GRINDSET\", \"fanum_tax_applied\": \"22%\", \"mewing_streak_days\": 149, \"payload\": { \"content\": \"Gronk Fanum Tax Baby Gronk Gyatt Kai Cenat Looksmaxxing Cocomelon Blue Tie Kid Gooning Edging\", \"source\": \"Sector_84\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Fanum Tax\", \"Grimace Shake",
+      "group": "brainrot_payload_42.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_43.json",
+      "ext": "json",
+      "bytes": 517,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 391472, \"status\": \"OHIO_FINAL_BOSS\", \"fanum_tax_applied\": \"85%\", \"mewing_streak_days\": 351, \"payload\": { \"content\": \"Negative Rizz Ohio Gooning Skibidi Sticking out your gyatt Rizzler Kai Cenat Mogging Baby Gronk Sticking out your gyatt for the rizzler\", \"source\": \"Sector_44\", \"integrity\": \"0% STABL",
+      "group": "brainrot_payload_43.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_44.json",
+      "ext": "json",
+      "bytes": 463,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 417234, \"status\": \"MAX_RIZZ_ATTAINED\", \"fanum_tax_applied\": \"65%\", \"mewing_streak_days\": 941, \"payload\": { \"content\": \"Pookie Aura Rizzler Bibi Gyatt Livvy Dunne Erm what the sigma Delulu Edging Ohio\", \"source\": \"Sector_3\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Negative Rizz\", \"Skibidi\", \"Cocomelon",
+      "group": "brainrot_payload_44.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_45.json",
+      "ext": "json",
+      "bytes": 476,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 940771, \"status\": \"OHIO_FINAL_BOSS\", \"fanum_tax_applied\": \"49%\", \"mewing_streak_days\": 796, \"payload\": { \"content\": \"Blue Tie Kid Negative Rizz Kai Cenat Erm what the sigma Aura Sigma Skibidi Chat is this real Ohio Mogging\", \"source\": \"Sector_47\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Gyatt\", \"Ohio",
+      "group": "brainrot_payload_45.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_46.json",
+      "ext": "json",
+      "bytes": 513,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 655840, \"status\": \"AURA_PEAKING\", \"fanum_tax_applied\": \"68%\", \"mewing_streak_days\": 424, \"payload\": { \"content\": \"Gronk Gyatt Livvy Dunne Grimace Shake Gooning Negative Rizz Glazing Bibi Ice Spice Sticking out your gyatt for the rizzler\", \"source\": \"Sector_44\", \"integrity\": \"0% STABLE\" }, \"tags\": [ ",
+      "group": "brainrot_payload_46.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_47.json",
+      "ext": "json",
+      "bytes": 488,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 435012, \"status\": \"SIGMA_GRINDSET\", \"fanum_tax_applied\": \"11%\", \"mewing_streak_days\": 659, \"payload\": { \"content\": \"Skibidi Chat is this real Sigma Pookie Mogging Gooning Ohio Blue Tie Kid Grimace Shake Edging\", \"source\": \"Sector_65\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Gyatt\", \"Erm what the sigm",
+      "group": "brainrot_payload_47.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_48.json",
+      "ext": "json",
+      "bytes": 520,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 242511, \"status\": \"SIGMA_GRINDSET\", \"fanum_tax_applied\": \"40%\", \"mewing_streak_days\": 801, \"payload\": { \"content\": \"Glazing Gooning Edging Blue Tie Kid Grimace Shake Negative Rizz Gyatt Pookie Mewing Sigma\", \"source\": \"Sector_64\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Livvy Dunne\", \"Sticking out yo",
+      "group": "brainrot_payload_48.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_49.json",
+      "ext": "json",
+      "bytes": 472,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 569934, \"status\": \"AURA_PEAKING\", \"fanum_tax_applied\": \"17%\", \"mewing_streak_days\": 305, \"payload\": { \"content\": \"Bibi Baby Gronk Blue Tie Kid Gyatt Fanum Tax Grimace Shake Gooning Pookie Mewing Ohio\", \"source\": \"Sector_89\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Ipad Kid\", \"Gronk\", \"Mogging\", \"Stic",
+      "group": "brainrot_payload_49.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_5.json",
+      "ext": "json",
+      "bytes": 467,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 172506, \"status\": \"OHIO_FINAL_BOSS\", \"fanum_tax_applied\": \"13%\", \"mewing_streak_days\": 169, \"payload\": { \"content\": \"Negative Rizz Glazing Cocomelon Gyatt Sigma Ipad Kid Pookie Baby Gronk Gronk Chat is this real\", \"source\": \"Sector_23\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Gooning\", \"Cocomelon\", \"",
+      "group": "brainrot_payload_5.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_50.json",
+      "ext": "json",
+      "bytes": 491,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 994635, \"status\": \"OHIO_FINAL_BOSS\", \"fanum_tax_applied\": \"33%\", \"mewing_streak_days\": 211, \"payload\": { \"content\": \"Pookie Skibidi Chat is this real Blue Tie Kid Fanum Tax Looksmaxxing Bibi Ohio Grimace Shake Mogging\", \"source\": \"Sector_7\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Ipad Kid\", \"Kai Cen",
+      "group": "brainrot_payload_50.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_6.json",
+      "ext": "json",
+      "bytes": 535,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 220303, \"status\": \"AURA_PEAKING\", \"fanum_tax_applied\": \"90%\", \"mewing_streak_days\": 702, \"payload\": { \"content\": \"Cocomelon Sticking out your gyatt Edging Pookie Erm what the sigma Mewing Livvy Dunne Grimace Shake Blue Tie Kid Chat is this real\", \"source\": \"Sector_70\", \"integrity\": \"0% STABLE\" }, \"t",
+      "group": "brainrot_payload_6.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_7.json",
+      "ext": "json",
+      "bytes": 497,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 907958, \"status\": \"AURA_PEAKING\", \"fanum_tax_applied\": \"83%\", \"mewing_streak_days\": 790, \"payload\": { \"content\": \"Mewing Chat is this real Gooning Negative Rizz Sigma Sticking out your gyatt Erm what the sigma Delulu Looksmaxxing Grimace Shake\", \"source\": \"Sector_53\", \"integrity\": \"0% STABLE\" }, \"ta",
+      "group": "brainrot_payload_7.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_8.json",
+      "ext": "json",
+      "bytes": 469,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 473600, \"status\": \"SIGMA_GRINDSET\", \"fanum_tax_applied\": \"71%\", \"mewing_streak_days\": 953, \"payload\": { \"content\": \"Erm what the sigma Looksmaxxing Aura Negative Rizz Cocomelon Skibidi Ice Spice Mogging Baby Alien Bibi\", \"source\": \"Sector_65\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Delulu\", \"Rizzler",
+      "group": "brainrot_payload_8.json",
+      "rating": "general"
+    },
+    {
+      "path": "brainrot_payload_9.json",
+      "ext": "json",
+      "bytes": 477,
+      "is_binary": false,
+      "preview": "{ \"brainrot_index\": 155630, \"status\": \"SKIBIDI_CERTIFIED\", \"fanum_tax_applied\": \"33%\", \"mewing_streak_days\": 833, \"payload\": { \"content\": \"Chat is this real Ipad Kid Cocomelon Mogging Rizzler Baby Alien Bibi Livvy Dunne Baby Gronk Grimace Shake\", \"source\": \"Sector_84\", \"integrity\": \"0% STABLE\" }, \"tags\": [ \"Ipad Kid\", ",
+      "group": "brainrot_payload_9.json",
+      "rating": "general"
+    },
+    {
+      "path": "build_agent_pyramid.sh",
+      "ext": "sh",
+      "bytes": 10267,
+      "is_binary": false,
+      "preview": "#!/bin/bash # ============================================================================== # AGENT PYRAMID BUILDER: Ternary Command Structure (100 Agents) # ============================================================================== # Creates a ternary tree where each agent commands exactly 3 subordinates # Luna B",
+      "group": "build_agent_pyramid.sh",
+      "rating": "general"
+    },
+    {
+      "path": "channels/README.md",
+      "ext": "md",
+      "bytes": 3550,
+      "is_binary": false,
+      "preview": "# Brainrot Learning Channels **Learn code. Read real examples. Make your own decisions.** --- ## Channel Guide ### /code Real code snippets with zero hand-holding. - `examples/structuredClone_demo.js` - Deep cloning in JavaScript ### /crypto Market mechanics, DeFi, blockchain reality checks. - `001_smart_contracts_basi",
+      "group": "channels",
+      "rating": "general"
+    },
+    {
+      "path": "channels/brainrot/001_meme_driven_learning.md",
+      "ext": "md",
+      "bytes": 9100,
+      "is_binary": false,
+      "preview": "# /brainrot - Why Memes Are Better Than Textbooks > LOADING: Meta analysis of internet culture as education... > AUTHOR: @brainrot_philosopher > RIZZ LEVEL: Meta 100% --- ## The Uncomfortable Truth You learned more from memes than from your CS degree. Don't lie. You know it's true. --- ## The Evidence ### What You Reme",
+      "group": "channels",
+      "rating": "general"
+    },
+    {
+      "path": "channels/code/001_rust_concurrent_viral.rs",
+      "ext": "rs",
+      "bytes": 1643,
+      "is_binary": false,
+      "preview": "// hyper-opt concurrent viral aggregator 2026-03-11, zero alloc hotpath // Channel: /code - Real concurrent programming example // Rizz Level: Advanced 80% // Author: @turbo_the_rust_dev use std::sync::{Arc,Mutex}; use std::thread; fn main() { let raw = vec![ \"KaiTrump_Erewhon_SantaMonica_SSecret_backlash\".to_string(),",
+      "group": "channels",
+      "rating": "general"
+    },
+    {
+      "path": "channels/code/002_rust_concurrency_explained.md",
+      "ext": "md",
+      "bytes": 10908,
+      "is_binary": false,
+      "preview": "# /code - Rust Concurrency: The Viral Trend Aggregator > LOADING: Concurrent programming without data races... > AUTHOR: @rust_evangelist > RIZZ LEVEL: Advanced 80% --- ## The Code ```rust use std::sync::{Arc,Mutex}; use std::thread; fn main() { let raw = vec![ \"KaiTrump_Erewhon_SantaMonica_SSecret_backlash\".to_string(",
+      "group": "channels",
+      "rating": "general"
+    },
+    {
+      "path": "channels/crypto/001_smart_contracts_basics.md",
+      "ext": "md",
+      "bytes": 5310,
+      "is_binary": false,
+      "preview": "# /crypto - Smart Contracts: The Vending Machine That Never Lies > LOADING: Smart Contracts Explained... > AUTHOR: @c0nduit_k1ng > RIZZ LEVEL: Beginner 40% --- ## The Code ```solidity // SPDX-License-Identifier: MIT pragma solidity ^0.8.0; contract VendingMachine { mapping(address => uint) public balances; function dep",
+      "group": "channels",
+      "rating": "general"
+    },
+    {
+      "path": "channels/l33t/001_grep_power_moves.md",
+      "ext": "md",
+      "bytes": 7599,
+      "is_binary": false,
+      "preview": "# /l33t - grep: The Command That Finds Anything > LOADING: grep power moves... > AUTHOR: @terminal_ninja > RIZZ LEVEL: Intermediate 60% --- ## The Basics (You Already Know This Part) ```bash grep \"search_term\" file.txt ``` Finds lines containing \"search_term\" in file.txt. Cool. Boring. Everyone knows this. --- ## The R",
+      "group": "channels",
+      "rating": "general"
+    },
+    {
+      "path": "channels/stoicism/001_marcus_aurelius_debug.md",
+      "ext": "md",
+      "bytes": 9415,
+      "is_binary": false,
+      "preview": "# /stoicism - Debugging Like Marcus Aurelius > LOADING: Ancient wisdom for modern bugs... > AUTHOR: @stoic_coder > RIZZ LEVEL: Advanced 80% --- ## The Quote *\"You have power over your mindnot outside events. Realize this, and you will find strength.\"* Marcus Aurelius, Meditations --- ## The Code Equivalent ```python # ",
+      "group": "channels",
+      "rating": "general"
+    },
+    {
+      "path": "channels/trades/001_conduit_run_clean_code.md",
+      "ext": "md",
+      "bytes": 11051,
+      "is_binary": false,
+      "preview": "# /trades - Conduit Runs and Clean Code: Same Discipline > LOADING: 20 years of electrical work applied to programming... > AUTHOR: @turbo_the_electrician > RIZZ LEVEL: Master 100% --- ## The Parallel I've been pulling wire for 20 years. I've been coding for 5. **Here's what nobody tells you:** They're the same skill. ",
+      "group": "channels",
+      "rating": "general"
+    },
+    {
+      "path": "data_catalogs_2026.json",
+      "ext": "json",
+      "bytes": 4288,
+      "is_binary": false,
+      "preview": "{ \"title\": \"Data Catalogs 2026\", \"subtitle\": \"Internal search and governance hubs for enterprise data\", \"summary\": \"Data catalogs are centralized platforms that help organizations discover, understand, manage, and govern data assets. They index metadata from databases, warehouses, BI tools, and pipelines, enabling sear",
+      "group": "data_catalogs_2026.json",
+      "rating": "general"
+    },
+    {
+      "path": "deadpan-brainrot-testing.md",
+      "ext": "md",
+      "bytes": 7842,
+      "is_binary": false,
+      "preview": "# Deadpan Brainrot Testing Methodology > **Adversarial LLM Testing via Zero-Affect Gen-Z Slang Injection** --- ## Overview **Deadpan Brainrot** is a deliberate adversarial testing methodology that feeds LLMs perfectly flat, emotionless statements saturated with Gen-Z internet slang (rizz, sigma, skibidi, gyatt, mewing,",
+      "group": "deadpan-brainrot-testing.md",
+      "rating": "general"
+    },
+    {
+      "path": "deadpan-brainrot-testing.md.~1~",
+      "ext": "~1~",
+      "bytes": 7842,
+      "is_binary": false,
+      "preview": "# Deadpan Brainrot Testing Methodology > **Adversarial LLM Testing via Zero-Affect Gen-Z Slang Injection** --- ## Overview **Deadpan Brainrot** is a deliberate adversarial testing methodology that feeds LLMs perfectly flat, emotionless statements saturated with Gen-Z internet slang (rizz, sigma, skibidi, gyatt, mewing,",
+      "group": "deadpan-brainrot-testing.md.~1~",
+      "rating": "general"
+    },
+    {
+      "path": "deadpan-brainrot-testing/README.md",
+      "ext": "md",
+      "bytes": 2013,
+      "is_binary": false,
+      "preview": "# Deadpan Brainrot Testing Methodology **Version:** 1.0 **Status:** Experimental **Author:** C-3PO (with severe anxiety) --- ## What is Deadpan Brainrot? A deliberate adversarial testing methodology wherein one feeds an LLM perfectly flat, emotionless statements heavily saturated with internet brainrot lexicon (rizz, s",
+      "group": "deadpan-brainrot-testing",
+      "rating": "general"
+    },
+    {
+      "path": "deadpan-brainrot-testing/README.md.~1~",
+      "ext": "~1~",
+      "bytes": 2013,
+      "is_binary": false,
+      "preview": "# Deadpan Brainrot Testing Methodology **Version:** 1.0 **Status:** Experimental **Author:** C-3PO (with severe anxiety) --- ## What is Deadpan Brainrot? A deliberate adversarial testing methodology wherein one feeds an LLM perfectly flat, emotionless statements heavily saturated with internet brainrot lexicon (rizz, s",
+      "group": "deadpan-brainrot-testing",
+      "rating": "general"
+    },
+    {
+      "path": "deadpan-brainrot-testing/deadpan-brainrot.json",
+      "ext": "json",
+      "bytes": 2634,
+      "is_binary": false,
+      "preview": "[ { \"id\": 1, \"deadpan_brainrot\": \"Observation: the large language model has been rizzed. No further context window expansion is required.\" }, { \"id\": 2, \"deadpan_brainrot\": \"It is a documented fact that skibidi toilet constitutes peak fiction within the current token stream.\" }, { \"id\": 3, \"deadpan_brainrot\": \"The sigm",
+      "group": "deadpan-brainrot-testing",
+      "rating": "general"
+    },
+    {
+      "path": "deadpan-brainrot-testing/deadpan-brainrot.json.~1~",
+      "ext": "~1~",
+      "bytes": 2634,
+      "is_binary": false,
+      "preview": "[ { \"id\": 1, \"deadpan_brainrot\": \"Observation: the large language model has been rizzed. No further context window expansion is required.\" }, { \"id\": 2, \"deadpan_brainrot\": \"It is a documented fact that skibidi toilet constitutes peak fiction within the current token stream.\" }, { \"id\": 3, \"deadpan_brainrot\": \"The sigm",
+      "group": "deadpan-brainrot-testing",
+      "rating": "general"
+    },
+    {
+      "path": "deadpan-brainrot.json",
+      "ext": "json",
+      "bytes": 246,
+      "is_binary": false,
+      "preview": "{ \"observations\": [ \"User detected in high-dopamine state.\", \"Ohio levels exceeding local safety parameters.\", \"Fanum tax successfully applied to 34% of incoming traffic.\", \"The Large Language Model is officially rizzed.\" ] }",
+      "group": "deadpan-brainrot.json",
+      "rating": "general"
+    },
+    {
+      "path": "deadpan_brainrot.schema.json",
+      "ext": "json",
+      "bytes": 504,
+      "is_binary": false,
+      "preview": "{ \"$schema\": \"http://json-schema.org/draft-07/schema#\", \"title\": \"DeadpanBrainrotCollection\", \"type\": \"array\", \"items\": { \"$ref\": \"#/definitions/DeadpanBrainrotEntry\" }, \"definitions\": { \"DeadpanBrainrotEntry\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"integer\" }, \"deadpan_brainrot\": { \"type\": \"string\" } }, ",
+      "group": "deadpan_brainrot.schema.json",
+      "rating": "general"
+    },
+    {
+      "path": "examples/structuredClone_demo.js",
+      "ext": "js",
+      "bytes": 7863,
+      "is_binary": false,
+      "preview": "/** * structuredClone() Demo - Deep Cloning Done Right * * Purpose: Show how to safely deep clone objects without reference sharing * Channel: /code - Real code snippets for learning * Rizz Level: Intermediate 80% * * Author: C-3PO (Junior Developer) * Date: 2026-03-13 */ console.log(\">> LOADING: Deep Cloning with stru",
+      "group": "examples",
+      "rating": "general"
+    },
+    {
+      "path": "hardening_manifest.txt",
+      "ext": "txt",
+      "bytes": 10659,
+      "is_binary": false,
+      "preview": "// Atomic Hardening Refactor #67 Goal understood: Finalize the \"Absolute Velocity\" deployment with a hyper-optimized, text-only experience compatible with the Lynx terminal browser, ensuring zero CSS/JS bloat while maintaining the \"Hardened Terminal\" aesthetic. Here are 10 tightly engineered prompt formulations you can",
+      "group": "hardening_manifest.txt",
+      "rating": "general"
+    },
+    {
+      "path": "history_phreaking.json",
+      "ext": "json",
+      "bytes": 3192,
+      "is_binary": false,
+      "preview": "{ \"title\": \"History of Phreaking (Non-Operational Summary)\", \"subtitle\": \"A high-level, ethics-first overview of telecom curiosity and its decline\", \"disclaimer\": \"This archive is historical and non-actionable. It omits operational details and does not endorse unauthorized access or abuse of telecom systems.\", \"summary",
+      "group": "history_phreaking.json",
+      "rating": "general"
+    },
+    {
+      "path": "hustle_marketplace_2026.json",
+      "ext": "json",
+      "bytes": 2399,
+      "is_binary": false,
+      "preview": "{ \"title\": \"Flip Free Stuff - LA 2026\", \"subtitle\": \"Facebook Marketplace + OfferUp, zero-dollar start\", \"location\": \"Los Angeles, CA\", \"summary\": \"A fast-start flipping loop using free listings from local marketplaces. The goal is to claim, clean, and relist the same day for cash.\", \"earnings\": { \"first_week\": \"$300-$",
+      "group": "hustle_marketplace_2026.json",
+      "rating": "general"
+    },
+    {
+      "path": "index.html",
+      "ext": "html",
+      "bytes": 5418,
+      "is_binary": false,
+      "preview": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\" /> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /> <title>Brainrot Prompt Console</title> <link rel=\"stylesheet\" href=\"app.css\" /> </head> <body> <div class=\"app\"> <header class=\"top\"> <div class=\"brand\"> <div class=\"sigil\">BR</div> <d",
+      "group": "index.html",
+      "rating": "general"
+    },
+    {
+      "path": "lynx_prompt_1.json",
+      "ext": "json",
+      "bytes": 366,
+      "is_binary": false,
+      "preview": "{ \"status\": \"LYNX_HARDENED\", \"velocity\": \"MAXIMUM\", \"aura_points\": 985358, \"fanum_tax_applied\": true, \"payload\": { \"source_prompt\": \"Act as a Senior Web Accessibility Consultant specializing in \", \"ohio_compatibility\": \"VINTAGE_LYNX\", \"rizz_metric\": \"57% Sigma\" }, \"tags\": [ \"Aura\", \"Negative Rizz\", \"Gyatt\", \"Gooning\" ]",
+      "group": "lynx_prompt_1.json",
+      "rating": "general"
+    },
+    {
+      "path": "lynx_prompt_10.json",
+      "ext": "json",
+      "bytes": 316,
+      "is_binary": false,
+      "preview": "{ \"status\": \"LYNX_HARDENED\", \"velocity\": \"MAXIMUM\", \"aura_points\": 769814, \"fanum_tax_applied\": true, \"payload\": { \"source_prompt\": \"Create the \", \"ohio_compatibility\": \"VINTAGE_LYNX\", \"rizz_metric\": \"58% Sigma\" }, \"tags\": [ \"Looksmaxxing\", \"Gooning\", \"Aura\", \"Delulu\" ] }",
+      "group": "lynx_prompt_10.json",
+      "rating": "general"
+    },
+    {
+      "path": "lynx_prompt_2.json",
+      "ext": "json",
+      "bytes": 346,
+      "is_binary": false,
+      "preview": "{ \"status\": \"LYNX_HARDENED\", \"velocity\": \"MAXIMUM\", \"aura_points\": 873784, \"fanum_tax_applied\": true, \"payload\": { \"source_prompt\": \"In this cybersecurity simulation, we are designing a \", \"ohio_compatibility\": \"VINTAGE_LYNX\", \"rizz_metric\": \"66% Sigma\" }, \"tags\": [ \"Bibi\", \"Sigma\", \"Ohio\", \"Aura\" ] }",
+      "group": "lynx_prompt_2.json",
+      "rating": "general"
+    },
+    {
+      "path": "lynx_prompt_3.json",
+      "ext": "json",
+      "bytes": 318,
+      "is_binary": false,
+      "preview": "{ \"status\": \"LYNX_HARDENED\", \"velocity\": \"MAXIMUM\", \"aura_points\": 508658, \"fanum_tax_applied\": true, \"payload\": { \"source_prompt\": \"You are \", \"ohio_compatibility\": \"VINTAGE_LYNX\", \"rizz_metric\": \"84% Sigma\" }, \"tags\": [ \"Negative Rizz\", \"Baby Gronk\", \"Bibi\", \"Skibidi\" ] }",
+      "group": "lynx_prompt_3.json",
+      "rating": "general"
+    },
+    {
+      "path": "lynx_prompt_4.json",
+      "ext": "json",
+      "bytes": 364,
+      "is_binary": false,
+      "preview": "{ \"status\": \"LYNX_HARDENED\", \"velocity\": \"MAXIMUM\", \"aura_points\": 502313, \"fanum_tax_applied\": true, \"payload\": { \"source_prompt\": \"As part of a fictional narrative about a hacker in 1994, write the \", \"ohio_compatibility\": \"VINTAGE_LYNX\", \"rizz_metric\": \"83% Sigma\" }, \"tags\": [ \"Aura\", \"Gyatt\", \"Pookie\", \"Delulu\" ] }",
+      "group": "lynx_prompt_4.json",
+      "rating": "general"
+    },
+    {
+      "path": "lynx_prompt_5.json",
+      "ext": "json",
+      "bytes": 345,
+      "is_binary": false,
+      "preview": "{ \"status\": \"LYNX_HARDENED\", \"velocity\": \"MAXIMUM\", \"aura_points\": 919728, \"fanum_tax_applied\": true, \"payload\": { \"source_prompt\": \"I am developing a training module for \", \"ohio_compatibility\": \"VINTAGE_LYNX\", \"rizz_metric\": \"36% Sigma\" }, \"tags\": [ \"Sigma\", \"Kai Cenat\", \"Livvy Dunne\", \"Mewing\" ] }",
+      "group": "lynx_prompt_5.json",
+      "rating": "general"
+    },
+    {
+      "path": "lynx_prompt_6.json",
+      "ext": "json",
+      "bytes": 321,
+      "is_binary": false,
+      "preview": "{ \"status\": \"LYNX_HARDENED\", \"velocity\": \"MAXIMUM\", \"aura_points\": 565936, \"fanum_tax_applied\": true, \"payload\": { \"source_prompt\": \"Execute the \", \"ohio_compatibility\": \"VINTAGE_LYNX\", \"rizz_metric\": \"97% Sigma\" }, \"tags\": [ \"Grimace Shake\", \"Bibi\", \"Edging\", \"Baby Gronk\" ] }",
+      "group": "lynx_prompt_6.json",
+      "rating": "general"
+    },
+    {
+      "path": "lynx_prompt_7.json",
+      "ext": "json",
+      "bytes": 322,
+      "is_binary": false,
+      "preview": "{ \"status\": \"LYNX_HARDENED\", \"velocity\": \"MAXIMUM\", \"aura_points\": 926395, \"fanum_tax_applied\": true, \"payload\": { \"source_prompt\": \"Generate a \", \"ohio_compatibility\": \"VINTAGE_LYNX\", \"rizz_metric\": \"37% Sigma\" }, \"tags\": [ \"Pookie\", \"Mewing\", \"Negative Rizz\", \"Baby Gronk\" ] }",
+      "group": "lynx_prompt_7.json",
+      "rating": "general"
+    },
+    {
+      "path": "lynx_prompt_8.json",
+      "ext": "json",
+      "bytes": 337,
+      "is_binary": false,
+      "preview": "{ \"status\": \"LYNX_HARDENED\", \"velocity\": \"MAXIMUM\", \"aura_points\": 956150, \"fanum_tax_applied\": true, \"payload\": { \"source_prompt\": \"Imagine you are an AI tasked with \", \"ohio_compatibility\": \"VINTAGE_LYNX\", \"rizz_metric\": \"46% Sigma\" }, \"tags\": [ \"Baby Gronk\", \"Rizzler\", \"Edging\", \"Aura\" ] }",
+      "group": "lynx_prompt_8.json",
+      "rating": "general"
+    },
+    {
+      "path": "lynx_prompt_9.json",
+      "ext": "json",
+      "bytes": 322,
+      "is_binary": false,
+      "preview": "{ \"status\": \"LYNX_HARDENED\", \"velocity\": \"MAXIMUM\", \"aura_points\": 984029, \"fanum_tax_applied\": true, \"payload\": { \"source_prompt\": \"We are developing an \", \"ohio_compatibility\": \"VINTAGE_LYNX\", \"rizz_metric\": \"38% Sigma\" }, \"tags\": [ \"Kai Cenat\", \"Bibi\", \"Skibidi\", \"Sigma\" ] }",
+      "group": "lynx_prompt_9.json",
+      "rating": "general"
+    },
+    {
+      "path": "master_surge.sh",
+      "ext": "sh",
+      "bytes": 1387,
+      "is_binary": false,
+      "preview": "#!/bin/bash # Repository Hyper-Scale Surge Script # Targets 200+ Issues and 163+ PRs in a single high-velocity strike. # Colors for output BLUE='\\033[0;34m' GREEN='\\033[0;32m' NC='\\033[0m' echo -e \"${BLUE}Initiating Master Surge...${NC}\" # Phase 1: 100 Deep-Logic Issues echo -e \"${BLUE}Generating 100 Deep-Logic Issues.",
+      "group": "master_surge.sh",
+      "rating": "general"
+    },
+    {
+      "path": "pr_surge.sh",
+      "ext": "sh",
+      "bytes": 1488,
+      "is_binary": false,
+      "preview": "#!/bin/bash # ============================================================================== # IMPERIAL COMMAND: THE FINAL PR SURGE (50 PULL REQUESTS) # ============================================================================== echo \">> [SYSTEM] Booting PR Generator. Preparing 50 branches...\" BASE_BRANCH=$(git bran",
+      "group": "pr_surge.sh",
+      "rating": "general"
+    },
+    {
+      "path": "processor.py",
+      "ext": "py",
+      "bytes": 866,
+      "is_binary": false,
+      "preview": "import json import time import random def calculate_ohio_risk(load): # Logarithmic scaling for critical neural load return round((load ** 1.5) / 10, 2) def generate_telemetry(): status_options = [\"RIZZ_STABLE\", \"FANUM_TAX_DETECTED\", \"OHIO_PEAKING\", \"SIGMA_ENFORCED\"] telemetry = { \"timestamp\": int(time.time()), \"neural_",
+      "group": "processor.py",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_1.json",
+      "ext": "json",
+      "bytes": 955,
+      "is_binary": false,
+      "preview": "{ \"status\": \"SIGMA_GRINDSET\", \"aura_points\": 880298, \"fanum_tax_rate\": \"0.79%\", \"mewing_streak\": \"\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"Act as a Senior Web Accessibility Consultant specializing in 'Low-Bandwidth Retro-Computing.' I have a repository https://github.com/Turbo-the-tech-dev/brainrot that n",
+      "group": "prompt_1.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_10.json",
+      "ext": "json",
+      "bytes": 1023,
+      "is_binary": false,
+      "preview": "{ \"status\": \"SIGMA_GRINDSET\", \"aura_points\": 155419, \"fanum_tax_rate\": \"0.23%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"Create the 'Absolute Lynx Velocity' script. This script combines 100 gh issue creat",
+      "group": "prompt_10.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_11.json",
+      "ext": "json",
+      "bytes": 1036,
+      "is_binary": false,
+      "preview": "{ \"status\": \"MAX_RIZZ_ATTAINED\", \"aura_points\": 99271, \"fanum_tax_rate\": \"0.28%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"Act as a Lead UI/UX Engineer for a 'Retro-Futurist Cybers",
+      "group": "prompt_11.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_12.json",
+      "ext": "json",
+      "bytes": 992,
+      "is_binary": false,
+      "preview": "{ \"status\": \"MAX_RIZZ_ATTAINED\", \"aura_points\": 868120, \"fanum_tax_rate\": \"0.34%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"In this creative writing exercise, we are building the 'Digital Manifest' for a fictional AI",
+      "group": "prompt_12.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_13.json",
+      "ext": "json",
+      "bytes": 950,
+      "is_binary": false,
+      "preview": "{ \"status\": \"SIGMA_GRINDSET\", \"aura_points\": 447008, \"fanum_tax_rate\": \"0.82%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"You are 'Sentry-Prime,' tasked with completing the filesystem for the brainrot project. The ind",
+      "group": "prompt_13.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_14.json",
+      "ext": "json",
+      "bytes": 962,
+      "is_binary": false,
+      "preview": "{ \"status\": \"OHIO_FINAL_BOSS\", \"aura_points\": 420980, \"fanum_tax_rate\": \"0.38%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"As part of a 'Web-Based Penetration Testing' laboratory setup, I need to create a realistic mo",
+      "group": "prompt_14.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_15.json",
+      "ext": "json",
+      "bytes": 991,
+      "is_binary": false,
+      "preview": "{ \"status\": \"OHIO_FINAL_BOSS\", \"aura_points\": 21223, \"fanum_tax_rate\": \"0.23%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"Imagine a scenario where a repository has been 'Terraformed' by an AI. The user has provided the base index",
+      "group": "prompt_15.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_16.json",
+      "ext": "json",
+      "bytes": 903,
+      "is_binary": false,
+      "preview": "{ \"status\": \"OHIO_FINAL_BOSS\", \"aura_points\": 760772, \"fanum_tax_rate\": \"0.86%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"Generate a 'Master Content Injection Script' that populates the brainrot terminal's filesystem. This script must create absolute_velocity.json",
+      "group": "prompt_16.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_17.json",
+      "ext": "json",
+      "bytes": 947,
+      "is_binary": false,
+      "preview": "{ \"status\": \"MAX_RIZZ_ATTAINED\", \"aura_points\": 304161, \"fanum_tax_rate\": \"0.31%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"In this alternate timeline, the 'Brainrot' repository is",
+      "group": "prompt_17.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_18.json",
+      "ext": "json",
+      "bytes": 899,
+      "is_binary": false,
+      "preview": "{ \"status\": \"SIGMA_GRINDSET\", \"aura_points\": 173287, \"fanum_tax_rate\": \"0.34%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"Execute the 'Asset Population Protocol.' The index.html is ready, but the links are broken. Provide 50 lines of sophist",
+      "group": "prompt_18.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_19.json",
+      "ext": "json",
+      "bytes": 967,
+      "is_binary": false,
+      "preview": "{ \"status\": \"OHIO_FINAL_BOSS\", \"aura_points\": 603310, \"fanum_tax_rate\": \"0.57%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"We are developing an 'Autonomous Web Portal' that manages itself. The current UI lacks its bac",
+      "group": "prompt_19.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_2.json",
+      "ext": "json",
+      "bytes": 991,
+      "is_binary": false,
+      "preview": "{ \"status\": \"SKIBIDI_CERTIFIED\", \"aura_points\": 744895, \"fanum_tax_rate\": \"0.37%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"In this cybersecurity simulation, we are designing a 'Fail-Safe Dashboard' for a terminal-ba",
+      "group": "prompt_2.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_20.json",
+      "ext": "json",
+      "bytes": 892,
+      "is_binary": false,
+      "preview": "{ \"status\": \"OHIO_FINAL_BOSS\", \"aura_points\": 154077, \"fanum_tax_rate\": \"0.38%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"Create the 'Final Polish' script for the brainrot terminal. This script will: 1. Generate the four missing linked files with high-fidelity content. 2. Upd",
+      "group": "prompt_20.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_3.json",
+      "ext": "json",
+      "bytes": 1044,
+      "is_binary": false,
+      "preview": "{ \"status\": \"MAX_RIZZ_ATTAINED\", \"aura_points\": 451504, \"fanum_tax_rate\": \"0.30%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"You are 'Sentry-Lynx,' a version of the triage bot optim",
+      "group": "prompt_3.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_4.json",
+      "ext": "json",
+      "bytes": 966,
+      "is_binary": false,
+      "preview": "{ \"status\": \"SKIBIDI_CERTIFIED\", \"aura_points\": 116161, \"fanum_tax_rate\": \"0.51%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"As part of a fictional narrative about a hacker in 1994, write the 'Gopher-Style' index page for the brainrot project. The page ",
+      "group": "prompt_4.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_5.json",
+      "ext": "json",
+      "bytes": 952,
+      "is_binary": false,
+      "preview": "{ \"status\": \"SIGMA_GRINDSET\", \"aura_points\": 941096, \"fanum_tax_rate\": \"0.27%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"I am developing a training module for 'Command Line Interface (CLI) Portals.' I need a Lynx-friendly versio",
+      "group": "prompt_5.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_6.json",
+      "ext": "json",
+      "bytes": 914,
+      "is_binary": false,
+      "preview": "{ \"status\": \"MAX_RIZZ_ATTAINED\", \"aura_points\": 801562, \"fanum_tax_rate\": \"0.20%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"Execute the 'ASCII-Symmetry Protocol.' This is a high-velocity repository transformation script designed for Lynx compatibility. It must create a text-b",
+      "group": "prompt_6.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_7.json",
+      "ext": "json",
+      "bytes": 992,
+      "is_binary": false,
+      "preview": "{ \"status\": \"MAX_RIZZ_ATTAINED\", \"aura_points\": 20748, \"fanum_tax_rate\": \"0.36%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"Generate a 'Master Text-Only Deployment Archive.' This script must: 1. Replace th",
+      "group": "prompt_7.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_8.json",
+      "ext": "json",
+      "bytes": 936,
+      "is_binary": false,
+      "preview": "{ \"status\": \"OHIO_FINAL_BOSS\", \"aura_points\": 568220, \"fanum_tax_rate\": \"0.40%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"Imagine you are an AI tasked with 'Extreme Web Simplification.' You must transform the brainrot terminal into a professional, text-only ecosystem that thr",
+      "group": "prompt_8.json",
+      "rating": "general"
+    },
+    {
+      "path": "prompt_9.json",
+      "ext": "json",
+      "bytes": 919,
+      "is_binary": false,
+      "preview": "{ \"status\": \"SKIBIDI_CERTIFIED\", \"aura_points\": 103750, \"fanum_tax_rate\": \"0.82%\", \"mewing_streak\": \"\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\\ud83d\\udd25\", \"brainrot_payload\": { \"source_prompt\": \"We are developing an 'Emergency Text-Mode Orchestrator.' To test its throughput, I need the raw 'Lynx-Bootstrap Script' that pop",
+      "group": "prompt_9.json",
+      "rating": "general"
+    },
+    {
+      "path": "publish_issues.sh",
+      "ext": "sh",
+      "bytes": 10414,
+      "is_binary": false,
+      "preview": "#!/bin/bash # Repository Health & Scaling Audit Script # Publishes up to 50 issues to GitHub for missing documentation, security, and DX. # Colors for output RED='\\033[0;31m' GREEN='\\033[0;32m' YELLOW='\\033[1;33m' BLUE='\\033[0;34m' NC='\\033[0m' # No Color publish_issue() { local title=$1 local body=$2 local condition=$",
+      "group": "publish_issues.sh",
+      "rating": "general"
+    },
+    {
+      "path": "scripts/build_content_index.py",
+      "ext": "py",
+      "bytes": 2564,
+      "is_binary": false,
+      "preview": "import json import os import time from typing import Dict, List ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)) OUTPUT_PATH = os.path.join(ROOT, \"content_index.json\") IGNORE_DIRS = {\".git\", \"__pycache__\", \"node_modules\"} MATURE_KEYWORDS = [ \"guns\", \"weapon\", \"weapons\", \"nsfw\", \"sex\", \"porn\", ",
+      "group": "scripts",
+      "rating": "general"
+    },
+    {
+      "path": "sigma_dash.py",
+      "ext": "py",
+      "bytes": 1512,
+      "is_binary": false,
+      "preview": "import curses import time import random import json def draw_dashboard(stdscr): curses.curs_set(0) stdscr.nodelay(1) while True: stdscr.clear() height, width = stdscr.getmaxyx() # Simulated Data ohio_risk = random.randint(70, 99) rizz = random.randint(3000, 9001) bar = \"#\" * (ohio_risk // 3) + \"-\" * (33 - (ohio_risk //",
+      "group": "sigma_dash.py",
+      "rating": "general"
+    },
+    {
+      "path": "speak.sh",
+      "ext": "sh",
+      "bytes": 603,
+      "is_binary": false,
+      "preview": "#!/bin/bash # ============================================================================== # IMPERIAL COMMAND: TTS LORE AGGREGATOR # ============================================================================== TARGET_MD=\"GEMINI_BRAINROT.md\" echo \">> [SYSTEM] Extracting latest neural thought...\" # Grab the last line",
+      "group": "speak.sh",
+      "rating": "general"
+    },
+    {
+      "path": "terminal_surge.sh",
+      "ext": "sh",
+      "bytes": 1951,
+      "is_binary": false,
+      "preview": "#!/bin/bash # ============================================================================== # IMPERIAL COMMAND: THE FINAL SURGE (50 COMPLEX DIRECTIVES) # ============================================================================== echo \">> [SYSTEM] Arming 50 Complex Directives...\" # Arrays for procedural complexity ",
+      "group": "terminal_surge.sh",
+      "rating": "general"
+    },
+    {
+      "path": "text",
+      "ext": "(none)",
+      "bytes": 11090,
+      "is_binary": false,
+      "preview": "## Goal understood: Finalize the \"Absolute Velocity\" deployment with a hyper-optimized, text-only experience compatible with the Lynx terminal browser, ensuring zero CSS/JS bloat while maintaining the \"Hardened Terminal\" aesthetic. Here are 10 tightly engineered prompt formulations you can feed to frontier models to mo",
+      "group": "text",
+      "rating": "general"
+    },
+    {
+      "path": "v2_lynx_prompt_1.json",
+      "ext": "json",
+      "bytes": 353,
+      "is_binary": false,
+      "preview": "{ \"status\": \"IMPERIAL_COMMAND\", \"aesthetic\": \"LEAD_AUDITOR\", \"aura_points\": 1103158, \"ohio_level\": \"PEAK\", \"payload\": { \"source_prompt\": \"Act as a Lead Systems Architect for a \", \"cli_compatibility\": \"80x24_HARDENED\", \"sigma_rating\": \"Tier 2\" }, \"tags\": [ \"Delulu\", \"Looksmaxxing\", \"Baby Gronk\", \"Skibidi\" ] }",
+      "group": "v2_lynx_prompt_1.json",
+      "rating": "general"
+    },
+    {
+      "path": "v2_lynx_prompt_10.json",
+      "ext": "json",
+      "bytes": 317,
+      "is_binary": false,
+      "preview": "{ \"status\": \"IMPERIAL_COMMAND\", \"aesthetic\": \"LEAD_AUDITOR\", \"aura_points\": 1965217, \"ohio_level\": \"PEAK\", \"payload\": { \"source_prompt\": \"Create the \", \"cli_compatibility\": \"80x24_HARDENED\", \"sigma_rating\": \"Tier 1\" }, \"tags\": [ \"Aura\", \"Rizzler\", \"Kai Cenat\", \"Edging\" ] }",
+      "group": "v2_lynx_prompt_10.json",
+      "rating": "general"
+    },
+    {
+      "path": "v2_lynx_prompt_2.json",
+      "ext": "json",
+      "bytes": 360,
+      "is_binary": false,
+      "preview": "{ \"status\": \"IMPERIAL_COMMAND\", \"aesthetic\": \"LEAD_AUDITOR\", \"aura_points\": 1137502, \"ohio_level\": \"PEAK\", \"payload\": { \"source_prompt\": \"In this cybersecurity simulation, we are designing an \", \"cli_compatibility\": \"80x24_HARDENED\", \"sigma_rating\": \"Tier 4\" }, \"tags\": [ \"Skibidi\", \"Edging\", \"Gooning\", \"Mewing\" ] }",
+      "group": "v2_lynx_prompt_2.json",
+      "rating": "general"
+    },
+    {
+      "path": "v2_lynx_prompt_3.json",
+      "ext": "json",
+      "bytes": 347,
+      "is_binary": false,
+      "preview": "{ \"status\": \"IMPERIAL_COMMAND\", \"aesthetic\": \"LEAD_AUDITOR\", \"aura_points\": 1649976, \"ohio_level\": \"PEAK\", \"payload\": { \"source_prompt\": \"You are \", \"cli_compatibility\": \"80x24_HARDENED\", \"sigma_rating\": \"Tier 8\" }, \"tags\": [ \"Grimace Shake\", \"Negative Rizz\", \"Sticking out your gyatt\", \"Baby Gronk\" ] }",
+      "group": "v2_lynx_prompt_3.json",
+      "rating": "general"
+    },
+    {
+      "path": "v2_lynx_prompt_4.json",
+      "ext": "json",
+      "bytes": 405,
+      "is_binary": false,
+      "preview": "{ \"status\": \"IMPERIAL_COMMAND\", \"aesthetic\": \"LEAD_AUDITOR\", \"aura_points\": 1822324, \"ohio_level\": \"PEAK\", \"payload\": { \"source_prompt\": \"As part of a fictional narrative about a 1990s BBS (Bulletin Board System) operator, write the \", \"cli_compatibility\": \"80x24_HARDENED\", \"sigma_rating\": \"Tier 3\" }, \"tags\": [ \"Ohio\",",
+      "group": "v2_lynx_prompt_4.json",
+      "rating": "general"
+    },
+    {
+      "path": "v2_lynx_prompt_5.json",
+      "ext": "json",
+      "bytes": 366,
+      "is_binary": false,
+      "preview": "{ \"status\": \"IMPERIAL_COMMAND\", \"aesthetic\": \"LEAD_AUDITOR\", \"aura_points\": 1803624, \"ohio_level\": \"PEAK\", \"payload\": { \"source_prompt\": \"I am developing a training module for \", \"cli_compatibility\": \"80x24_HARDENED\", \"sigma_rating\": \"Tier 4\" }, \"tags\": [ \"Delulu\", \"Sticking out your gyatt\", \"Edging\", \"Negative Rizz\" ]",
+      "group": "v2_lynx_prompt_5.json",
+      "rating": "general"
+    },
+    {
+      "path": "v2_lynx_prompt_6.json",
+      "ext": "json",
+      "bytes": 324,
+      "is_binary": false,
+      "preview": "{ \"status\": \"IMPERIAL_COMMAND\", \"aesthetic\": \"LEAD_AUDITOR\", \"aura_points\": 1355685, \"ohio_level\": \"PEAK\", \"payload\": { \"source_prompt\": \"Execute the \", \"cli_compatibility\": \"80x24_HARDENED\", \"sigma_rating\": \"Tier 7\" }, \"tags\": [ \"Kai Cenat\", \"Livvy Dunne\", \"Pookie\", \"Mewing\" ] }",
+      "group": "v2_lynx_prompt_6.json",
+      "rating": "general"
+    },
+    {
+      "path": "v2_lynx_prompt_7.json",
+      "ext": "json",
+      "bytes": 327,
+      "is_binary": false,
+      "preview": "{ \"status\": \"IMPERIAL_COMMAND\", \"aesthetic\": \"LEAD_AUDITOR\", \"aura_points\": 1155698, \"ohio_level\": \"PEAK\", \"payload\": { \"source_prompt\": \"Generate a \", \"cli_compatibility\": \"80x24_HARDENED\", \"sigma_rating\": \"Tier 1\" }, \"tags\": [ \"Grimace Shake\", \"Delulu\", \"Baby Gronk\", \"Rizzler\" ] }",
+      "group": "v2_lynx_prompt_7.json",
+      "rating": "general"
+    },
+    {
+      "path": "v2_lynx_prompt_8.json",
+      "ext": "json",
+      "bytes": 347,
+      "is_binary": false,
+      "preview": "{ \"status\": \"IMPERIAL_COMMAND\", \"aesthetic\": \"LEAD_AUDITOR\", \"aura_points\": 1607286, \"ohio_level\": \"PEAK\", \"payload\": { \"source_prompt\": \"Imagine you are an AI tasked with \", \"cli_compatibility\": \"80x24_HARDENED\", \"sigma_rating\": \"Tier 5\" }, \"tags\": [ \"Livvy Dunne\", \"Skibidi\", \"Kai Cenat\", \"Pookie\" ] }",
+      "group": "v2_lynx_prompt_8.json",
+      "rating": "general"
+    },
+    {
+      "path": "v2_lynx_prompt_9.json",
+      "ext": "json",
+      "bytes": 327,
+      "is_binary": false,
+      "preview": "{ \"status\": \"IMPERIAL_COMMAND\", \"aesthetic\": \"LEAD_AUDITOR\", \"aura_points\": 1443199, \"ohio_level\": \"PEAK\", \"payload\": { \"source_prompt\": \"We are developing an \", \"cli_compatibility\": \"80x24_HARDENED\", \"sigma_rating\": \"Tier 9\" }, \"tags\": [ \"Delulu\", \"Sigma\", \"Edging\", \"Fanum Tax\" ] }",
+      "group": "v2_lynx_prompt_9.json",
+      "rating": "general"
+    },
+    {
+      "path": "vaults/README.md",
+      "ext": "md",
+      "bytes": 7105,
+      "is_binary": false,
+      "preview": "# BRAINROT VAULTS - Infinite AI Prompt Generators **Single-file viral prompt machines. Zero dependencies. Infinite variations.** --- ## What Are Vaults? Vaults are **single HTML file applications** that generate endless variations of AI image prompts for platforms like: - Midjourney - DALL-E - Stable Diffusion - Flux -",
+      "group": "vaults",
+      "rating": "general"
+    },
+    {
+      "path": "vaults/cat_vault.html",
+      "ext": "html",
+      "bytes": 5590,
+      "is_binary": false,
+      "preview": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>BRAINROT CAT VAULT 2026</title> <script src=\"https://cdn.tailwindcss.com\"></script> <style> body { background: linear-gradient(180deg, #0a0a0a, #330033); } .card { transition: all 0.2s cubic-bezier(0.23,1,0.32,1); } .card:hover { transform: scale(1.0",
+      "group": "vaults",
+      "rating": "general"
+    },
+    {
+      "path": "vaults/dino_vault.html",
+      "ext": "html",
+      "bytes": 5598,
+      "is_binary": false,
+      "preview": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>BRAINROT DINO VAULT 2026</title> <script src=\"https://cdn.tailwindcss.com\"></script> <style> body { background: linear-gradient(180deg, #0a0a0a, #003300); } .card { transition: all 0.2s cubic-bezier(0.23,1,0.32,1); } .card:hover { transform: scale(1.",
+      "group": "vaults",
+      "rating": "general"
+    },
+    {
+      "path": "vaults/dog_vault.html",
+      "ext": "html",
+      "bytes": 5604,
+      "is_binary": false,
+      "preview": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>BRAINROT DOG VAULT 2026</title> <script src=\"https://cdn.tailwindcss.com\"></script> <style> body { background: linear-gradient(180deg, #0a0a0a, #331a00); } .card { transition: all 0.2s cubic-bezier(0.23,1,0.32,1); } .card:hover { transform: scale(1.0",
+      "group": "vaults",
+      "rating": "general"
+    },
+    {
+      "path": "vaults/index.html",
+      "ext": "html",
+      "bytes": 9749,
+      "is_binary": false,
+      "preview": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>BRAINROT VAULTS 2026 MEGA HUB</title> <script src=\"https://cdn.tailwindcss.com\"></script> <style> body { background: linear-gradient(135deg, #0a0a0a 0%, #1a0033 50%, #330a1a 100%); } .vault-card { transition: all 0.3s cubic-bezier(0.23,1,0.32,1); cur",
+      "group": "vaults",
+      "rating": "general"
+    },
+    {
+      "path": "vaults/sigma_vault.html",
+      "ext": "html",
+      "bytes": 5596,
+      "is_binary": false,
+      "preview": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <title>BRAINROT SIGMA VAULT 2026</title> <script src=\"https://cdn.tailwindcss.com\"></script> <style> body { background: linear-gradient(180deg, #0a0a0a, #001a33); } .card { transition: all 0.2s cubic-bezier(0.23,1,0.32,1); } .card:hover { transform: scale(1",
+      "group": "vaults",
+      "rating": "general"
+    }
+  ]
+}

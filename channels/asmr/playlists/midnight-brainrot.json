@@ -1,0 +1,33 @@
+{
+  "playlist_name": "Midnight Brainrot Sessions",
+  "description": "For when you can't sleep but also can't think straight",
+  "total_duration_minutes": 67,
+  "vibe": "Liminal",
+  "recommended_time": "2-4 AM",
+  "tracks": [
+    {
+      "position": 1,
+      "trigger_id": 3,
+      "name": "Skibidi Whispers",
+      "transition": "Fade in from silence"
+    },
+    {
+      "position": 2,
+      "trigger_id": 9,
+      "name": "The Number 67",
+      "transition": "Crossfade with static"
+    },
+    {
+      "position": 3,
+      "trigger_id": 13,
+      "name": "Walmart After Hours",
+      "transition": "Sudden cut (jumpscare-free)"
+    },
+    {
+      "position": 4,
+      "trigger_id": 6,
+      "name": "Rain Cooldown",
+      "transition": "Gentle fade to normalize your brain"
+    }
+  ]
+}

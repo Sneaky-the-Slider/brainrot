@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.log
+debates/
+*.swp
+*~
+council_logs.csv
+quick_debate_logs.csv

@@ -1,0 +1,73 @@
+{
+  "title": "Flip Free Stuff - LA 2026",
+  "subtitle": "Facebook Marketplace + OfferUp, zero-dollar start",
+  "location": "Los Angeles, CA",
+  "summary": "A fast-start flipping loop using free listings from local marketplaces. The goal is to claim, clean, and relist the same day for cash.",
+  "earnings": {
+    "first_week": "$300-$800 profit",
+    "ongoing": "$2k-$6k/month part-time"
+  },
+  "playbook": [
+    {
+      "step": "Hunt (5 minutes)",
+      "bullets": [
+        "Open Facebook Marketplace and set location to Los Angeles (30-50 miles).",
+        "Filter price = Free and sort by Newest.",
+        "Search: free couch, free dresser, free furniture, free TV, curb alert, free moving.",
+        "Check OfferUp and Nextdoor free sections too."
+      ]
+    },
+    {
+      "step": "Message and grab",
+      "template": "Hey, is this still available? I can pick up today or tomorrow morning if it works - cash in hand and ready to go!",
+      "bullets": [
+        "Reply to the first 3-5 new posts you see.",
+        "Speed wins - movers and landlords want it gone." 
+      ]
+    },
+    {
+      "step": "Pickup (easy mode)",
+      "bullets": [
+        "Start with small items if you do not have a truck (lamps, chairs, side tables, mirrors).",
+        "Bring blankets or straps.",
+        "Offer $10-$20 gas money if they need help moving.",
+        "Hot areas: Valley, Long Beach, Pasadena, West LA, Koreatown." 
+      ]
+    },
+    {
+      "step": "Clean and flip same day",
+      "bullets": [
+        "Wipe down with basic cleaner.",
+        "Take 6-8 bright photos outdoors.",
+        "List on OfferUp and Facebook Marketplace.",
+        "Price to move within 24-48 hours."
+      ]
+    },
+    {
+      "step": "Get paid",
+      "bullets": [
+        "Meet in public and follow platform safety guidance.",
+        "Cash or instant transfer on the spot.",
+        "Repeat daily."
+      ]
+    }
+  ],
+  "pricing_examples": [
+    "Free couch -> sell for $150-$350",
+    "Dresser/mirror set -> $80-$250",
+    "Working TV -> $100-$300"
+  ],
+  "safety_notes": [
+    "Meet in public and follow platform safety guidance.",
+    "Use cash or confirmed instant transfer on the spot.",
+    "Bring a friend for large pickups when possible."
+  ],
+  "scale_up": "Once you have $200-$300 profit, buy ugly-but-solid pieces for $20-$50 and flip after a quick clean or paint.",
+  "alternatives": [
+    "Plasma donation",
+    "Background extra work",
+    "DoorDash or Uber Eats",
+    "AI headshots/profile services"
+  ],
+  "call_to_action": "Pick one lane, run it for 7 days, then review what sold fastest."
+}

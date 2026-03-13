@@ -30,6 +30,12 @@ Electrical work principles applied to software craftsmanship.
 Meta-channel analyzing internet culture as education.
 - `001_meme_driven_learning.md` - Why memes work better than textbooks
 
+### 🗣️ /council
+Multi-agent debate system. Talk to 4 AI personas simultaneously.
+- `council.py` - Vader, Yoda, Stark, and Shadow argue about anything
+- Broadcast or Deliberate mode
+- Watch AI personas clash, collaborate, or tear each other apart
+
 ---
 
 ## Content Format

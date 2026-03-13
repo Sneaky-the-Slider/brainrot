@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Brainrot is a community-driven learning platform that teaches through real code examples rather than tutorials. The philosophy: "Learn code. Read real examples. Make your own decisions." Built for self-learners who figure things out by doing.
 
-The platform organizes content into channels: `/code`, `/crypto`, `/sports`, `/stoicism`, `/guns`, `/gangster`, `/l33t`, `/asmr`, `/trades`, and `/brainrot`.
+The platform organizes content into channels: `/code`, `/crypto`, `/sports`, `/stoicism`, `/guns`, `/gangster`, `/l33t`, `/asmr`, `/trades`, `/council`, and `/brainrot`.
 
 ## Development Environment
 

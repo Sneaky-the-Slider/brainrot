@@ -1,37 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>IMPERIAL COMMAND | SIGMA NODE</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brainrot Prompt Console</title>
+  <link rel="stylesheet" href="app.css" />
 </head>
 <body>
-<pre>
-======================================================================
-  [ IMPERIAL COMMAND ] :: ROOT NODE ACTIVE :: [ TERMUX DEPLOYMENT ]
-======================================================================
-  SYS_ID   : BRAINROT-PRIME         UPTIME    : 99.999%
-  OPERATOR : SIGMA-ACTUAL           OHIO_RISK : [||||||||||..] 84%
-======================================================================
+  <div class="gate" id="gate" hidden>
+    <form class="gate-card" id="gateForm">
+      <div class="gate-title">Enter the Archive</div>
+      <div class="gate-subtitle">Entertainment only. Stored locally in your browser.</div>
+      <label class="gate-label" for="gateAge">Age</label>
+      <input id="gateAge" class="gate-input" type="number" min="1" max="120" required />
+      <label class="gate-label" for="gateSex">Sex</label>
+      <select id="gateSex" class="gate-input" required>
+        <option value="" disabled selected>Select one</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="nonbinary">Non-binary</option>
+        <option value="prefer_not_say">Prefer not to say</option>
+      </select>
+      <label class="gate-check">
+        <input id="gateConfirm" type="checkbox" required />
+        I understand this is for entertainment purposes only.
+      </label>
+      <button type="submit">Continue</button>
+    </form>
+  </div>
 
-[ TELEMETRY FEED ]
-> Neural load stabilizing...
-> Fanum tax routed to /dev/null
-> Rizz-index peaked at 9001. System nominal.
+  <div class="app">
+    <header class="top">
+      <div class="brand">
+        <div class="sigil">BR</div>
+        <div>
+          <div class="title">Brainrot Prompt Console</div>
+          <div class="subtitle">Read real prompts. Make your own decisions.</div>
+          <div class="disclaimer">Entertainment only. No operational guidance.</div>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="prevBtn" class="ghost" type="button">Prev</button>
+        <button id="randomBtn" type="button">Random</button>
+        <button id="nextBtn" class="ghost" type="button">Next</button>
+        <button id="profileBtn" class="ghost" type="button">Profile</button>
+      </div>
+    </header>
+    <div class="profile-badge" id="profileBadge">Profile: --</div>
 
-[ DIRECTORIES ]
-  1. <u><a href="absolute_velocity.json">DEPLOYMENT_SCENARIOS.JSON</a></u>
-  2. <u><a href="deadpan-brainrot.json">LIVE_METRICS.JSON</a></u>
-  3. <u><a href="GEMINI_BRAINROT.md">MANIFESTO.MD</a></u>
-  4. <u><a href="BRAINROT_CONFIG.yml">SYSTEM_CONFIG.YML</a></u>
+    <main class="grid">
+      <section class="panel hero" aria-live="polite">
+        <div class="hero-top">
+          <div class="label">Prompt</div>
+          <div class="counter" id="counter">1 / 20</div>
+        </div>
+        <pre class="prompt" id="sourcePrompt">Loading...</pre>
+        <div class="hero-footer">
+          <button id="toggleRaw" class="ghost" type="button">Show JSON</button>
+          <span class="status" id="status">Status: --</span>
+        </div>
+        <pre class="raw" id="rawJson" hidden></pre>
+      </section>
 
-[ ACTIVE PROCESSES ]
-  PID    USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-  1      root      20   0  19.2g  18.1g   4.1g R  99.9  85.2 999:59.99 processor.py
-  42     sigma     -5   0      0      0      0 S   0.0   0.0   0:00.00 rizz_daemon
-  
-======================================================================
-  (C) 2026 IMPERIAL AUTOMATION. ALL RIGHTS RESERVED.
-======================================================================
-</pre>
+      <section class="panel stats">
+        <div class="label">System Readout</div>
+        <div class="stats-grid">
+          <div>
+            <div class="stat-label">Aura Points</div>
+            <div class="stat-value" id="auraPoints">--</div>
+          </div>
+          <div>
+            <div class="stat-label">Fanum Tax</div>
+            <div class="stat-value" id="fanumTax">--</div>
+          </div>
+          <div>
+            <div class="stat-label">Mewing Streak</div>
+            <div class="stat-value" id="mewingStreak">--</div>
+          </div>
+          <div>
+            <div class="stat-label">Ohio Compatibility</div>
+            <div class="stat-value" id="ohio">--</div>
+          </div>
+          <div>
+            <div class="stat-label">Skibidi Flag</div>
+            <div class="stat-value" id="skibidi">--</div>
+          </div>
+          <div>
+            <div class="stat-label">Grimace Shake</div>
+            <div class="stat-value" id="grimace">--</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel analysis">
+        <div class="label">Rizz Analysis</div>
+        <div class="analysis-body" id="rizz">--</div>
+      </section>
+
+      <section class="panel tags">
+        <div class="label">Tags</div>
+        <div class="tag-row" id="tags"></div>
+      </section>
+
+      <section class="panel deadpan" aria-live="polite">
+        <div class="label">Deadpan Brainrot</div>
+        <div class="deadpan-header">
+          <div class="deadpan-id" id="deadpanId">#--</div>
+          <div class="deadpan-status" id="deadpanStatus">Schema: --</div>
+        </div>
+        <div class="deadpan-text" id="deadpanText">Loading...</div>
+        <div class="deadpan-controls">
+          <button id="deadpanPrev" class="ghost" type="button">Prev</button>
+          <button id="deadpanRandom" type="button">Random</button>
+          <button id="deadpanNext" class="ghost" type="button">Next</button>
+        </div>
+        <div class="deadpan-meta">
+          <span>Source: `deadpan-brainrot-testing/deadpan-brainrot.json`</span>
+          <span>Schema: `deadpan_brainrot.schema.json`</span>
+        </div>
+      </section>
+
+      <section class="panel hustle" aria-live="polite">
+        <div class="label">Hustle Playbook</div>
+        <div class="hustle-title" id="hustleTitle">Loading...</div>
+        <div class="hustle-subtitle" id="hustleSubtitle"></div>
+        <div class="hustle-summary" id="hustleSummary"></div>
+        <div class="hustle-stats" id="hustleStats"></div>
+        <div class="hustle-steps" id="hustleSteps"></div>
+        <div class="hustle-block">
+          <div class="hustle-block-title">Pricing Examples</div>
+          <div class="hustle-list" id="hustleExamples"></div>
+        </div>
+        <div class="hustle-block">
+          <div class="hustle-block-title">Scale Up</div>
+          <div class="hustle-scale" id="hustleScale"></div>
+        </div>
+        <div class="hustle-block">
+          <div class="hustle-block-title">Safety Notes</div>
+          <div class="hustle-list" id="hustleSafety"></div>
+        </div>
+        <div class="hustle-block">
+          <div class="hustle-block-title">Alternatives</div>
+          <div class="hustle-list" id="hustleAlternatives"></div>
+        </div>
+        <div class="hustle-cta" id="hustleCTA"></div>
+      </section>
+
+      <section class="panel code-drops" aria-live="polite">
+        <div class="label">Code Drops</div>
+        <div class="code-drops-title" id="codeDropsTitle">Loading...</div>
+        <div class="code-drops-subtitle" id="codeDropsSubtitle"></div>
+        <div class="code-drops-list" id="codeDropsList"></div>
+      </section>
+
+      <section class="panel catalog" aria-live="polite">
+        <div class="label">Data Catalogs</div>
+        <div class="catalog-title" id="catalogTitle">Loading...</div>
+        <div class="catalog-subtitle" id="catalogSubtitle"></div>
+        <div class="catalog-summary" id="catalogSummary"></div>
+        <div class="catalog-block">
+          <div class="catalog-block-title">Core Capabilities</div>
+          <div class="catalog-list" id="catalogCapabilities"></div>
+        </div>
+        <div class="catalog-block">
+          <div class="catalog-block-title">2026 Trends</div>
+          <div class="catalog-list" id="catalogTrends"></div>
+        </div>
+        <div class="catalog-block">
+          <div class="catalog-block-title">Tool Landscape</div>
+          <div class="catalog-tools" id="catalogTools"></div>
+        </div>
+        <div class="catalog-block">
+          <div class="catalog-block-title">Quick Recommendations</div>
+          <div class="catalog-list" id="catalogRecommendations"></div>
+        </div>
+      </section>
+
+      <section class="panel asmr-player" aria-live="polite">
+        <div class="label">ASMR Brainrot Engine</div>
+        <div class="asmr-header">
+          <div class="asmr-title" id="asmrTitle">Whispered Nonsense Generator</div>
+          <div class="asmr-status" id="asmrStatus">Ready</div>
+        </div>
+
+        <div class="asmr-current" id="asmrCurrent">
+          <div class="asmr-emoji" id="asmrEmoji">🎧</div>
+          <div class="asmr-trigger-info">
+            <div class="asmr-trigger-name" id="asmrTriggerName">Select a trigger</div>
+            <div class="asmr-trigger-effect" id="asmrTriggerEffect">Choose your confusion level</div>
+          </div>
+        </div>
+
+        <div class="asmr-controls">
+          <div class="asmr-slider-container">
+            <div class="asmr-slider-label">
+              <span>Brainrot Coefficient</span>
+              <span class="asmr-slider-value" id="asmrSliderValue">0.50</span>
+            </div>
+            <input type="range" id="asmrSlider" class="asmr-slider" min="0" max="100" value="50" />
+            <div class="asmr-slider-labels">
+              <span>Pure Calm</span>
+              <span>Maximum Brainrot</span>
+            </div>
+          </div>
+
+          <div class="asmr-buttons">
+            <button id="asmrPlay" type="button">▶ Play</button>
+            <button id="asmrStop" class="ghost" type="button">⏹ Stop</button>
+            <button id="asmrRandom" class="ghost" type="button">🎲 Random</button>
+          </div>
+        </div>
+
+        <div class="asmr-grid" id="asmrGrid"></div>
+
+        <div class="asmr-footer">
+          <span class="asmr-source">Source: channels/asmr/trigger_library.json</span>
+        </div>
+      </section>
+
+      <section class="panel trendjacker" aria-live="polite">
+        <div class="label">Reddit Trends Feed</div>
+        <div class="trendjacker-header">
+          <div class="trendjacker-title" id="trendjackerTitle">Loading...</div>
+          <div class="trendjacker-meta" id="trendjackerMeta">--</div>
+        </div>
+        <div class="trendjacker-quote" id="trendjackerQuote"></div>
+        <div class="trendjacker-grid" id="trendjackerGrid"></div>
+        <div class="trendjacker-footer">
+          <button id="trendjackerRefresh" class="ghost" type="button">Refresh Feed</button>
+          <span class="trendjacker-source">Source: trendjacker_feed.json</span>
+        </div>
+      </section>
+
+      <section class="panel library" aria-live="polite">
+        <div class="label">Repo Library</div>
+        <div class="library-note" id="libraryNote">Loading index...</div>
+        <div class="library-controls">
+          <input id="librarySearch" class="library-input" type="search" placeholder="Search files..." />
+          <select id="libraryType" class="library-input">
+            <option value="all">All types</option>
+          </select>
+        </div>
+        <div class="library-grid">
+          <div class="library-list" id="libraryList"></div>
+          <div class="library-view">
+            <div class="library-view-header" id="libraryViewHeader">Select a file to preview.</div>
+            <pre class="library-viewer" id="libraryViewer"></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel history" aria-live="polite">
+        <div class="label">History Archive</div>
+        <div class="history-title" id="historyTitle">Loading...</div>
+        <div class="history-subtitle" id="historySubtitle"></div>
+        <div class="history-summary" id="historySummary"></div>
+        <div class="history-disclaimer" id="historyDisclaimer"></div>
+        <div class="history-timeline" id="historyTimeline"></div>
+        <div class="history-notes" id="historyNotes"></div>
+        <div class="history-glossary" id="historyGlossary"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>Local app. No build step. Data pulled from `prompt_*.json`.</div>
+      <div class="hint">Tip: append ?n=7 to the URL to jump to a prompt.</div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

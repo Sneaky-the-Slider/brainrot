@@ -1,0 +1,33 @@
+{
+  "playlist_name": "Wholesome Reset Protocol",
+  "description": "Low brainrot coefficient for actual mental health",
+  "total_duration_minutes": 45,
+  "vibe": "Healing",
+  "recommended_time": "Sunday afternoon",
+  "tracks": [
+    {
+      "position": 1,
+      "trigger_id": 10,
+      "name": "Capybara Hot Spring",
+      "transition": "Start immediately"
+    },
+    {
+      "position": 2,
+      "trigger_id": 6,
+      "name": "Rain & Affirmations",
+      "transition": "Natural blend"
+    },
+    {
+      "position": 3,
+      "trigger_id": 14,
+      "name": "Aura Brushing",
+      "transition": "Ethereal crossfade"
+    },
+    {
+      "position": 4,
+      "trigger_id": 11,
+      "name": "Hydration Station",
+      "transition": "Gentle fade out"
+    }
+  ]
+}
