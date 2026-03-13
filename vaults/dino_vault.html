@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BRAINROT DINO VAULT 2026</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body { background: linear-gradient(180deg, #0a0a0a, #003300); }
+.card { transition: all 0.2s cubic-bezier(0.23,1,0.32,1); }
+.card:hover { transform: scale(1.05) rotate(4deg); box-shadow: 0 0 30px #00ff00; }
+.neon { text-shadow: 0 0 20px #00ff00, 0 0 40px #aaff00; }
+</style>
+</head>
+<body class="min-h-screen text-white font-mono">
+<div class="max-w-5xl mx-auto p-6">
+<header class="flex justify-between items-center mb-8">
+<h1 class="text-5xl font-black neon tracking-tighter">BRAINROT<br>DINO VAULT</h1>
+<button onclick="viralize()" class="px-8 py-4 bg-lime-600 hover:bg-lime-500 rounded-2xl text-xl font-bold flex items-center gap-3">
+<span>GO VIRAL 🔥</span>
+<span class="text-3xl">🦖</span>
+</button>
+</header>
+
+<div id="feed" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+<footer class="mt-12 text-center text-xs opacity-50">hyper-optimized single-file • zero-deps • infinite roars • 2026 edition</footer>
+</div>
+
+<script>
+// Base viral dinos from 2026 TikTok brainrot meta (roar-safe only)
+const baseDinos = [
+  {name:"cyberrex.xo", desc:"Neon cyber-T-Rex, LED jaw glow, tail drops to skibidi-roar. 87M views. Pure fossil rizz.", prompt:"Ultra-detailed 8k render of cyberrex.xo as viral TikTok AI dino in glowing spikes & harness doing Italian brainrot roar, safe cute pose, vibrant neon aesthetic"},
+  {name:"dailyydino", desc:"Daily dose of dino energy, mirror stomp challenge, rawr on full display. Brainrot fuel.", prompt:"Cinematic shot of dailyydino as 2026 TikTok viral dino king in micro spikes & harness, mid-roar pose, safe cute vibe, high-energy brainrot style"},
+  {name:"roarperlla", desc:"Italian brainrot dino, cappuccina spins in scaly tail. Millions looping.", prompt:"Photoreal AI dino roarperlla doing viral skibidi-roar dance in sparkly collar, safe cute scales, TikTok trend lighting"},
+  {name:"oohlirawr", desc:"Dino thirst trap edits, slow-mo tail sways, 2026 comps exploding.", prompt:"High-res portrait of oohlirawr as spicy-safe TikTok dino, oversized hoodie + spikes combo, brainrot face filter, viral energy"},
+  {name:"dino_oasis6", desc:"Desert dino oasis, stomp trends turned safe streetwear bops.", prompt:"Gorgeous 2026 viral dino dino_oasis6 mid-roar challenge, safe spikes & cargos, desert neon sunset backdrop"},
+  {name:"the.realroarer", desc:"Realest dino edits, roar-sync + stomp combos, pure addiction.", prompt:"Dynamic shot of the.realroarer as brainrot TikTok dino icon, roar move in fitted harness, safe cute glow, ultra-viral style"}
+];
+
+let feed = document.getElementById('feed');
+
+function createCard(b) {
+  const card = document.createElement('div');
+  card.className = `card bg-zinc-900/90 border border-lime-500/30 rounded-3xl overflow-hidden`;
+  card.innerHTML = `
+    <div class="h-64 bg-gradient-to-br from-lime-900 to-emerald-900 flex items-center justify-center text-6xl relative">
+      <span class="text-9xl opacity-20">🦖</span>
+      <div class="absolute top-4 right-4 bg-black/70 px-3 py-1 rounded-full text-xs font-bold">10M+ 🔥</div>
+    </div>
+    <div class="p-6">
+      <div class="flex justify-between items-start">
+        <div>
+          <div class="text-2xl font-black neon">@${b.name}</div>
+          <div class="text-lime-400 text-sm mt-1">${b.desc}</div>
+        </div>
+      </div>
+      <button onclick="copyPrompt('${b.prompt}')"
+        class="mt-6 w-full py-3 bg-white text-black font-bold rounded-2xl hover:bg-lime-400 transition">COPY VIRAL PROMPT 📋</button>
+    </div>
+  `;
+  return card;
+}
+
+function renderFeed() {
+  feed.innerHTML = '';
+  baseDinos.forEach(b => feed.appendChild(createCard(b)));
+}
+
+function viralize() {
+  const templates = [
+    "skibidi-roar king", "stomp machine", "rawr rizz lord", "brainrot extinction event", "cappuccina roar challenge"
+  ];
+  const newB = {
+    name: "dino_" + Math.random().toString(36).slice(2,8) + ".xo",
+    desc: templates[Math.floor(Math.random()*templates.length)] + " – safe cute TikTok drop, 2026 meta, roar overload.",
+    prompt: "8k viral TikTok AI dino " + templates[Math.floor(Math.random()*templates.length)] + " in spikes & harness doing brainrot roar, safe cute pose, neon cyber aesthetic, high detail"
+  };
+  const newCard = createCard(newB);
+  feed.prepend(newCard);
+
+  // Confetti dino extinction event
+  for(let i=0;i<30;i++){
+    setTimeout(()=>{
+      const c = document.createElement('div');
+      c.textContent = ['🔥','🦖','🦴','✨'][Math.floor(Math.random()*4)];
+      c.style.position='fixed'; c.style.left=Math.random()*100+'vw'; c.style.top='-50px';
+      c.style.fontSize='2rem'; c.style.transition='all 1.2s'; c.style.zIndex=9999;
+      document.body.appendChild(c);
+      setTimeout(()=>{c.style.transform=`translateY(${window.innerHeight+100}px) rotate(${Math.random()*800}deg)`; c.style.opacity=0;},50);
+      setTimeout(()=>{c.remove();},1500);
+    },i*12);
+  }
+}
+
+function copyPrompt(p) {
+  navigator.clipboard.writeText(p);
+  const toast = document.createElement('div');
+  toast.textContent = 'PROMPT COPIED – GO GENERATE DINO RIZZ 🔥';
+  toast.className = 'fixed bottom-8 left-1/2 -translate-x-1/2 bg-lime-600 text-white px-8 py-4 rounded-2xl font-bold text-sm shadow-2xl';
+  document.body.appendChild(toast);
+  setTimeout(()=>{toast.style.opacity=0; setTimeout(()=>toast.remove(),300);},1400);
+}
+
+document.documentElement.style.setProperty('--tw-ring-color', '#00ff00');
+renderFeed();
+</script>
+</body>
+</html>

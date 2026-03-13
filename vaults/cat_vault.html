@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BRAINROT CAT VAULT 2026</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body { background: linear-gradient(180deg, #0a0a0a, #330033); }
+.card { transition: all 0.2s cubic-bezier(0.23,1,0.32,1); }
+.card:hover { transform: scale(1.05) rotate(3deg); box-shadow: 0 0 30px #ff00ff; }
+.neon { text-shadow: 0 0 20px #ff00ff, 0 0 40px #aa00ff; }
+</style>
+</head>
+<body class="min-h-screen text-white font-mono">
+<div class="max-w-5xl mx-auto p-6">
+<header class="flex justify-between items-center mb-8">
+<h1 class="text-5xl font-black neon tracking-tighter">BRAINROT<br>CAT VAULT</h1>
+<button onclick="viralize()" class="px-8 py-4 bg-purple-600 hover:bg-purple-500 rounded-2xl text-xl font-bold flex items-center gap-3">
+<span>GO VIRAL 🔥</span>
+<span class="text-3xl">🐱</span>
+</button>
+</header>
+
+<div id="feed" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+<footer class="mt-12 text-center text-xs opacity-50">hyper-optimized single-file • zero-deps • infinite purrs • 2026 edition</footer>
+</div>
+
+<script>
+// Base viral cats from 2026 TikTok brainrot meta (cute-safe only)
+const baseCats = [
+  {name:"cybermeow.xo", desc:"Neon cyber-cat, LED collar glow, tail drops to skibidi-meow. 87M views. Pure purr rizz.", prompt:"Ultra-detailed 8k render of cybermeow.xo as viral TikTok AI cat in glowing bandana & harness doing Italian brainrot meow, safe cute pose, vibrant neon aesthetic"},
+  {name:"dailyycat", desc:"Daily dose of cat energy, mirror zoomie challenge, loaf mode on full display. Brainrot fuel.", prompt:"Cinematic shot of dailyycat as 2026 TikTok viral cat queen in micro bandana & harness, mid-purr pose, safe cute vibe, high-energy brainrot style"},
+  {name:"meowperlla", desc:"Italian brainrot cat, cappuccina spins in floofy tail. Millions looping.", prompt:"Photoreal AI cat meowperlla doing viral skibidi-meow dance in sparkly collar, safe cute fur, TikTok trend lighting"},
+  {name:"oohlimeow", desc:"Cat thirst trap edits, slow-mo tail sways, 2026 comps exploding.", prompt:"High-res portrait of oohlimeow as spicy-safe TikTok cat, oversized hoodie + harness combo, brainrot face filter, viral energy"},
+  {name:"catty_oasis6", desc:"Desert cat oasis, zoomie trends turned safe streetwear bops.", prompt:"Gorgeous 2026 viral cat catty_oasis6 mid-meow challenge, safe bandana & cargos, desert neon sunset backdrop"},
+  {name:"the.realpurrer", desc:"Realest cat edits, meow-sync + zoomie combos, pure addiction.", prompt:"Dynamic shot of the.realpurrer as brainrot TikTok cat icon, purr move in fitted harness, safe cute glow, ultra-viral style"}
+];
+
+let feed = document.getElementById('feed');
+
+function createCard(b) {
+  const card = document.createElement('div');
+  card.className = `card bg-zinc-900/90 border border-purple-500/30 rounded-3xl overflow-hidden`;
+  card.innerHTML = `
+    <div class="h-64 bg-gradient-to-br from-purple-900 to-pink-900 flex items-center justify-center text-6xl relative">
+      <span class="text-9xl opacity-20">🐱</span>
+      <div class="absolute top-4 right-4 bg-black/70 px-3 py-1 rounded-full text-xs font-bold">10M+ 🔥</div>
+    </div>
+    <div class="p-6">
+      <div class="flex justify-between items-start">
+        <div>
+          <div class="text-2xl font-black neon">@${b.name}</div>
+          <div class="text-purple-400 text-sm mt-1">${b.desc}</div>
+        </div>
+      </div>
+      <button onclick="copyPrompt('${b.prompt}')"
+        class="mt-6 w-full py-3 bg-white text-black font-bold rounded-2xl hover:bg-purple-400 transition">COPY VIRAL PROMPT 📋</button>
+    </div>
+  `;
+  return card;
+}
+
+function renderFeed() {
+  feed.innerHTML = '';
+  baseCats.forEach(b => feed.appendChild(createCard(b)));
+}
+
+function viralize() {
+  const templates = [
+    "skibidi-meow queen", "zoomie machine", "purr rizz lord", "brainrot loaf king", "cappuccina meow challenge"
+  ];
+  const newB = {
+    name: "cat_" + Math.random().toString(36).slice(2,8) + ".xo",
+    desc: templates[Math.floor(Math.random()*templates.length)] + " – safe cute TikTok drop, 2026 meta, meow overload.",
+    prompt: "8k viral TikTok AI cat " + templates[Math.floor(Math.random()*templates.length)] + " in bandana & harness doing brainrot meow, safe cute pose, neon cyber aesthetic, high detail"
+  };
+  const newCard = createCard(newB);
+  feed.prepend(newCard);
+
+  // Confetti cat explosion
+  for(let i=0;i<30;i++){
+    setTimeout(()=>{
+      const c = document.createElement('div');
+      c.textContent = ['🔥','🐱','🧶','✨'][Math.floor(Math.random()*4)];
+      c.style.position='fixed'; c.style.left=Math.random()*100+'vw'; c.style.top='-50px';
+      c.style.fontSize='2rem'; c.style.transition='all 1.2s'; c.style.zIndex=9999;
+      document.body.appendChild(c);
+      setTimeout(()=>{c.style.transform=`translateY(${window.innerHeight+100}px) rotate(${Math.random()*800}deg)`; c.style.opacity=0;},50);
+      setTimeout(()=>{c.remove();},1500);
+    },i*12);
+  }
+}
+
+function copyPrompt(p) {
+  navigator.clipboard.writeText(p);
+  const toast = document.createElement('div');
+  toast.textContent = 'PROMPT COPIED – GO GENERATE CAT RIZZ 🔥';
+  toast.className = 'fixed bottom-8 left-1/2 -translate-x-1/2 bg-purple-600 text-white px-8 py-4 rounded-2xl font-bold text-sm shadow-2xl';
+  document.body.appendChild(toast);
+  setTimeout(()=>{toast.style.opacity=0; setTimeout(()=>toast.remove(),300);},1400);
+}
+
+document.documentElement.style.setProperty('--tw-ring-color', '#ff00ff');
+renderFeed();
+</script>
+</body>
+</html>
